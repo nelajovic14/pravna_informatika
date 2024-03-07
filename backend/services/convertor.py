@@ -2,7 +2,6 @@ import xml.etree.ElementTree as ET
 import aspose.pdf as ap
 import io
 
-
 def extract_text(element):
     text = ""
     if element.text:
@@ -27,7 +26,6 @@ def create_and_write_in_pdf(text,input_file):
     page.paragraphs.add(text_fragment)
     document.save(input_file + ".pdf")
     
-
 def convert_xml_to_pdf(input_file):
     xml_file = "C:\\Users\\Korisnik\\Desktop\\Pravna Informatika\\pravna_informatika\\backend\\AkomaNtoso\\" + input_file + ".xml"
     text = extract_text_from_xml_file(xml_file)
