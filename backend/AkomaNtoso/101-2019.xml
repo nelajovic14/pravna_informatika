@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Rožajama
+                    </FRBRauthor>
+                    <FRBRdate date="2019-12-12">
+                        2019-12-12
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 101/2019
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Rozaje" showAs="Osnovni sud u Rožajama" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo" showAs="Osnovno drzavno tuzilastvo" />
+                <TLCPerson eId="mzekic" href="/ontology/person/mzekic" showAs="Milosav Zekic" />
+                <TLCPerson eId="jnurkovic" href="/ontology/person/jnurkovic" showAs="Jasmina Nurković" />
+                <TLCPerson eId="akalac" href="/ontology/person/akalac" showAs="Aldin Kalač" />
+                <TLCPerson eId="rs" href="/ontology/person/rs" showAs="R. S." />
+                <TLCPerson eId="im" href="/ontology/person/im" showAs="I. M." />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+                <TLCRole eId="defendant_counsel" href="/ontology/role/defendant_counsel" showAs="Defendant Counsel" />  
+                <TLCRole eId="accomplice" href="/ontology/role/accomplice" showAs="Accomplice" />  
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U ROŽAJAMA
+                </organization>
+                , i to sudija Osnovnog suda u Rožajama
+                <party id="mzekic" refersTo="#mzekic" as="#judge">
+                    Milosav Zekic
+                </party>
+                , uz učešće zapisničara
+                <party id="jnurkovic" refersTo="#jnurkovic" as="#clerk">
+                    Jasmine Nurković
+                </party>
+                , rješavajući po izmijenjenom optužnom predlogu 
+                <party id="odt" referesTo="#odt">
+					Osnovnog državnog tužilaštva
+				</party>
+                 iz Rožaja Kt.br. 36/19 od 13.03.2019.g, podnijet protiv okrivljenog
+                <party id="im" href="/ontology/person/im" as="#defendant">
+                    I. M.
+                </party>
+                iz B. - R. S., kao saizvršioca, zbog krivičnog djela krijumčarenje iz
+                <ref href="/krivicni#art_265_para_1_point_1">
+                    čl. 265. st. 1.
+                </ref>
+                u vezi
+                <ref href="/krivicni#art_23_para_1_point_2">
+                    čl. 23. st. 2.
+                </ref>
+                Krivičnog zakonika Crne Gore, nakon održanog glavnog i javnog pretresa u prisustvu državnog tužioca
+                <party id="akalac" refersTo="#akalac" as="#plaintiff">
+                    Aldina Kalača
+                </party>
+                , okrivljenog i njegovog branioca
+                <party id="rs" refersTo="#rs" as="#defendant_counsel">
+                    R. S. adv.
+                </party>
+                , dana 12.12.2019.godine, donio je i javno objavio
+                 P R E S U D U
+                Okrivljeni
+                <party id="im" href="/ontology/person/im" as="#defendant">
+                    I. M.
+                </party>
+                , JMB ... , od oca D. i majke S. rođene I., rođen ... .godine, u B., R. S., gdje i živi - ul. Z. Đ. br. ... , državljanina R. S., razumije crnogorski
+            </p>
+            <conclusions>
+                <p>
+                K R I V J E
+                Što se:
+                Dana 08.03.2019.godine, u mjestu zv. D., O. R., u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, zajednički sa
+                <party id="mm" href="/ontology/person/mm" as="#accomplice">
+                    M. M.
+                </party>
+                bavio se prenošenjem robe preko carinske linije, izbjegavajući mjere carinskog nadzora i to: 17 komada led kontrolera, 7 komada zvučnika marke „B.“, 
+                900 metara led trake i 15 komada regulatora osvjetljenja, na način što je robu predao
+                <party id="mm" href="/ontology/person/mm" as="#accomplice">
+                    M. M.
+                </party>
+                u T., R. S., da mu istu prenese zaobilaznim putem, bez evidentiranja na graničnom prelazu D., O.., izbjegavajući na taj način mjere carinskog nadzora, 
+                pa mu je
+                <party id="m" href="/ontology/person/m" as="#accomplice">
+                    M.
+                </party>
+                robu prenio, a on je zatim, robu preuzeo na teritoriji O. R.i prevozio je putničkim motornim vozilom marke „B.“, tip 520 D, reg. oznaka br. BG ... , kojom prilikom je kontrolisan od strane pripadnika saobraćajne policije u Beranama,
+                čime je, kao saizvršilac, izvršio krivično djelo krijumčarenje iz
+                <ref href="/krivicni#art_265">
+                    čl. 265. st. 1.
+                </ref>
+                u vezi
+                <ref href="/krivicni#art_23_para_2">
+                    čl. 23. st. 2.
+                </ref>
+                Krivičnog zakonika Crne Gore.
+                Pa mu sud primjenom pomenutih zakonskih propisa i
+                <ref href="/krivicni#art_2">
+                    čl. 2
+                </ref>
+                ,
+                <ref href="/krivicni#art_3">
+                    3
+                </ref>
+                ,
+                <ref href="/krivicni#art_4">
+                    4
+                </ref>
+                ,
+                <ref href="/krivicni#art_5">
+                    5
+                </ref>
+                ,
+                <ref href="/krivicni#art_13">
+                    13
+                </ref>
+                ,
+                <ref href="/krivicni#art_14">
+                    14
+                </ref>
+                ,
+                <ref href="/krivicni#art_15">
+                    15
+                </ref>
+                ,
+                <ref href="/krivicni#art_36">
+                    36
+                </ref>
+                ,
+                <ref href="/krivicni#art_42">
+                    42
+                </ref>
+                ,
+                <ref href="/krivicni#art_52">
+                    52
+                </ref>
+                ,
+                <ref href="/krivicni#art_53">
+                    53
+                </ref>
+                i
+                <ref href="/krivicni#art_54">
+                    54
+                </ref>
+                Krivičnog zakonika Crne Gore i
+                <ref href="/postupak#art_374">
+                    čl. 374.
+                </ref>
+                Zakonika o Krivičnom Postupku, izriče
+                USLOVNU OSUDU
+                Kojom mu utvrđuje kaznu zatvora u trajanju od 6 (šest) mjeseci i istovremeno 
+                određuje da se kazna neće izvršiti ukoliko osuđeni u roku od jedne godine ne izvrši novo krivično djelo.
+                Istovremeno, sud okrivljenog, primjenom pomenutih zakonskih propisa i
+                <ref href="/krivicni#art_34">
+                    čl. 34
+                </ref>
+                i
+                <ref href="/krivicni#art_39">
+                    39
+                </ref>
+                Krivičnog Zakonika Crne Gore i
+                <ref href="/postupak#art_374">
+                    čl. 374.
+                </ref>
+                Zakonika o krivičnom postupku
+                O S U Đ U J E
+                    Na NOVČANU KAZNU u iznosu od 200,00 (dvije stotine) eura. Ako osuđeni ne plati novčanu kaznu u roku od 15 (petnaest) dana po pravosnažnosti ove
+                    presude, ista će se zamijeniti kaznom zatvora, tako što će se za svakih započetih 25,00 eura novčane kazne odrediti jedan dan kazne zatvora.
+                Obavezuje se 
+                <party id="im" href="/ontology/person/im" as="#defendant">
+                    okrivljeni
+                </party>
+                    da plati na ime troškova krivičnog postupka paušalni iznos od 30,00 eura, u korist Budžeta Crne Gore, u roku od 15 dana po 
+                pravosnažnosti ove presude.
+                Od 
+                <party id="im" href="/ontology/person/im" as="#defendant">
+                    okrivljenog
+                </party>
+                    se oduzma: 17 komada led kontrolera, 7 komada zvučnika marke „B.“, 900 metara led trake i 15 komada regulatora osvjetljenja, kao roba
+                    koja je predmet izvršenja krivičnog djela.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Rožajama
+                    </FRBRauthor>
+                    <FRBRdate date="2017-03-27">
+                        2017-03-27
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 24/2017
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Rozaje" showAs="Osnovni sud u Rožajama" />
+                <TLCPerson eId="mzekic" href="/ontology/person/mzekic" showAs="Milosav Zekić" />
+                <TLCPerson eId="aluboder" href="/ontology/person/aluboder" showAs="Aida Luboder" />
+                <TLCPerson eId="ep" href="/ontology/person/ep" showAs="E. P." />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" referesTo="#os">
+                    OSNOVNI SUD U ROŽAJAMA
+                </organization>
+                , i to predsjednik krivičnog vanraspravnog vijeća - sudija
+                <party id="mzekic" refersTo="#mzekic" as="#judge">
+                    Milosav Zekić
+                </party>
+                , uz učešće zapisničara
+                <party id="aluboder" refersTo="#aluboder" as="#clerk">
+                    Aida Luboder
+                </party>
+                , u krivičnom predmetu protiv okrivljenog
+                <party id="ep" refersTo="#ep" as="#defendant">
+                    E. P.
+                </party>
+                iz Plava, zbog krivičnog djela krijumčarenje iz
+                <ref href="/krivicni#art_265">
+                    čl. 265. st. 1. Krivičnog zakonika Crne Gore
+                </ref>
+                , po optužnom predlogu ODT-a iz Rožaja Kt. 30/17 od 03.03.2017.g., nakon donošenja rješenja o usvajanju sporazuma o priznavanju krivice, 
+                dana 27.03.2017. godine, donio je
+                <party id="ep" refersTo="#ep" as="#defendant">
+                    Okrivljeni E. P.
+                </party>
+                , JMB ., od oca O. i majke I. rođene D., rođenog ..godine, u Plavu, gdje i živi - ul. Žioca bb, državljanin Crne Gore, razumije crnogorski jezik 
+                koji je i njegov jezik, po zanimanju privatni preduzetnik, oženjen, otac troje maloljetne djece, pismen, završio VŠS, siromašnog imovnog stanja, 
+                neosuđivan.
+            </p>
+            <conclusions>
+                <p>
+                K R I V J E
+                Što je:
+                dana 23.02.2017.godine, oko 23,00 časova, u mjestu zv. Dračenovac, Opština Rožaje, u uračunljivom stanju, svjestan svog djela čije je izvršenje 
+                htio, iako je znao da je njegovo djelo zabranjeno, bavio se prenošenjem robe preko carinske linije i to: 216 paketa koncentrata – praška „Cedevita“ 
+                (jedan paket 50 komada kesica, od po 19 grama), ukupno 10.800 kesica, na način što je vozilom marke Fiat Doblo, reg. oznaka PL AF 458, kojim je 
+                prevozio robu, iz pravca Republike Srbije u Crnu Goru, ušao zaobilaznim putem, bez evidentiranja na graničnom prelazu Dračenovac, izbjegavajući na 
+                taj način mjere carinskog nadzora, nakon čega je tokom transporta robe zatečen u mjestu zv. Rudeš, Opština Berane, prilikom kontrole od strane 
+                službenika Uprave policije – CB Berane, čime je izvršio krivično djelo krijumčarenje iz
+                <ref href="/krivicni#art_265_para_1_point_1">
+                    čl. 265. st. 1. Krivičnog zakonika Crne Gore
+                </ref>
+                pa mu sud primenom pomenutog zakonskog propisa i 
+                <ref href="/krivicni#art_4">
+                    čl. 4 
+                </ref>
+                ,
+                <ref href="/krivicni#art_13">
+                    13
+                </ref>
+                ,
+                <ref href="/krivicni#art_15">
+                    15
+                </ref>
+                ,
+                <ref href="/krivicni#art_32">
+                    32
+                </ref>
+                ,
+                <ref href="/krivicni#art_36">
+                    36
+                </ref>
+                ,
+                <ref href="/krivicni#art_42">
+                    42
+                </ref>
+                ,
+                <ref href="/krivicni#art_45">
+                    45
+                </ref>
+                ,
+                <ref href="/krivicni#art_46_para_1_point_1_point_5">
+                    46, st. 1. tač.5.
+                </ref>
+                čl. 
+                <ref href="/krivicni#art_52">
+                    52
+                </ref>
+                ,
+                <ref href="/krivicni#art_53">
+                    53
+                </ref>
+                ,
+                <ref href="/krivicni#art_54">
+                    54
+                </ref>
+                Krivičnog zakonika Crne Gore i čl. 
+                <ref href="/postupak#art_303">
+                    303
+                </ref>
+                    i 
+                <ref href="/postupak#art_374">
+                    374
+                </ref>
+                    Zakonika o krivičnom postupku, izriče
+                USLOVNU OSUDU
+                Kojom mu utvrđuje kaznu zatvora u trajanju 3 (tri) mjeseca i istovremeno odredjuje da se kazna neće izvršiti ukoliko osuđeni u roku od jedne
+                    godine ne izvrši novo krivično djelo.
+                Istovremeno 
+                <organization id="os" referesTo="#os">
+                    sud
+                </organization> 
+                <party id="ep" refersTo="#ep" as="#defendant">
+                    okrivljenog
+                </party>
+                , primenom čl. 4,13,15, 32, 34, 39 i 42 Krivičnog zakonika Crne Gore i čl. 303 i 374. Zakonika o krivičnom postupku
+                O S U Đ U J E
+                Na NOVČANU KAZNU u iznosu od 200,00 (dvije stotine) eura. Ako osudjeni ne plati novčanu kaznu u roku od 15 dana, po pravosnažnosti ove presude, 
+                ista će se zamijeniti kaznom zatvora, tako što će se za svakih započetih 25,00 eura novčane kazne odrediti jedan dan kazne zatvora.
+                Da plati na ime troškova krivičnog postupka paušalni iznos od 40,00 eura,u korist budžeta Crne Gore, u roku od 15 dana po pravosnažnosti ove presude.
+                Od 
+                <party id="ep" refersTo="#ep" as="#defendant">
+                    okrivljenog
+                </party>
+                    se oduzima 216 paketa koncentrata - praška "cedevita" ( jedan paket, 50 kom. kesica od po 19 gr,), ukupno 10.800 kesica, kao predmeti izvršenja 
+                    krivičnog djela.
+                    </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+  <judgment>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>
+            OSNOVNI SUD U PLJEVLJIMA
+          </FRBRauthor>
+          <FRBRdate date="2015-06-12">
+            2015-06-12
+          </FRBRdate>
+          <FRBRtitle>
+            K 39/2015
+          </FRBRtitle>
+          <FRBRcountry>
+            CG
+          </FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="osp" href="/ontology/organization/OsnovniSud.Pljevlja" showAs="Osnovni sud u Pljevljima" />
+        <TLCOrganization eId="odtp" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Pljevlja" showAs="Osnovno državno tužilaštvo Pljevlja" />
+        <TLCPerson eId="lp" href="/ontology/person/lpopovic" showAs="Ljiljana Popović" />
+        <TLCPerson eId="zl" href="/ontology/person/zlekovic" showAs="Zora Leković" />
+        <TLCPerson eId="gs" href="/ontology/person/gsanja" showAs="Golubović Sanja" />
+        <TLCPerson eId="gm" href="/ontology/person/gm" showAs="G. M." />
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+        <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+        <TLCRole eId="defenseattorney" href="/ontology/role/defenseattorney" showAs="Defense Attorney" />
+
+      </references>
+    </meta>
+    <judgmentBody>
+      <p>
+        <organization id="osp" referesTo="#osp">
+          OSNOVNI SUD U PLJEVLJIMA
+        </organization>
+        , kao prvostepeni krivični sud, po sudiji 
+        <party id="lp" refersTo="#lp" as="#judge">
+          Ljiljani Popović
+        </party>
+        uz sudjelovanje zapisničara 
+        <party id="zl" refersTo="#zl" as="#clerk">
+          Zore Leković
+        </party>
+        , u krivičnom predmetu protiv optužene 
+        <party id="bv" showAs="B.V." as = "defendant"> B.V. </party>
+        , koju brani 
+        <party id="gm" showAs="G. M." as="defenseattorney"> G.M. </party>
+        advokat iz P., zbog krivičnog djela krijumčarenje iz 
+        <ref href="/krivicni#art_265_para_1_point_1">
+          čl.265 st.1 Krivičnog zakonika Crne Gore
+        </ref>
+        a po optužnom predlogu ODT Pljevlja Kt.br.53/15 od 13.05.2015.godine, nakon održanog glavnog i javnog pretresa u prisustvu zamjenika ODT Pljevlja 
+        <party id="gs" refersTo="#gs" as="#plaintiff">
+          Golubović Sanje
+        </party>
+        , optužene 
+        <party id="bv" showAs="B.V." as = "defendant"> B.V. </party>
+        i njenog branioca advokata 
+        <party id="gm" showAs="G. M." as="defenseattorney"> G.M. </party>
+        , dana 12.06.2015.godine donio je i javno objavio
+        P R E S U D U
+
+        Optužena 
+        <party id="bv" showAs="B.V." as = "defendant"> B.V. </party>
+        , JMBG ..., od oca M.i majke K. rodjene B., rodjena u selu J.opština P. dana .....godine, sa prebivalištem u selu J. opština P.,državljanka CG, 
+        razvedena,majka jednog punoljetnog djeteta,nezaposlena,poljoprivrednik,pismena, završila osnovnu školu,govori srpskim jezikom, razumije crnogorski jezik,
+        lošeg imovnog stanja, osudjivana presudom Osnovnog suda Bosanska Dubica K.br.31/88 od 11.12.1989.godine zbog krivičnog djela iz 
+        <ref href="/krivicnibih#clan_226_st_3">
+          čl.226 st.3 KZ BiH
+        </ref>
+        utvrdjena kazna zatvora u trajanju od 6 mjeseci uslovno jednu godinu.
+      </p>
+      <conclusions>
+        <p>
+          K R I V A J E
+          - Što je:
+          Dana 11.05.2015.godine oko 10,00 časova svjesna svoga djela čije izvršenje je htjela,znajući da je njeno djelo zabranjeno,bavila se prenošenjem robe preko 
+          carinske linije iz R.S.u C.G. izbjegavajući mjere carinskog nadzora na način što je na području R.S.u selu B.kupila i u svoj traktor marke IMT tip 539 bez 
+          registarskih oznaka, sa prikolicom marke „Trepča“ utovarila 34 (tridesetčetvoro) komada živih prasadi ukupne težine 914 kg. te naznačenu robu povezla 
+          zaobilaznim makadamskim putem R.S.-M.-O.P. zaobilazeći pri tom carinski punkt „R.“ kada je po prelasku u C.G., u mjestu M. O.P. zaustavljena od strane 
+          ovlašćenih policijskih službenika OGB P.kojom prilikom je kasnije od optužene oduzeta naznačena roba,
+          Čime je izvršila krivično djelo krijumčarenje iz 
+          <ref href="/krivicni#art_265_para_1_point_1">
+            čl.265 st.1 Krivičnog zakonika Crne Gore
+          </ref>
+          , pa joj sud na osnovu već citiranog zakonskog propisa te primjenom članova
+          <ref href="/krivicni#art_4">
+              4.
+          </ref>
+          <ref href="/krivicni#art_13">
+              13.
+          </ref>
+          <ref href="/krivicni#art_15">
+              15.
+          </ref>
+          <ref href="/krivicni#art_32">
+              32.
+          </ref>
+          <ref href="/krivicni#art_36">
+              36.
+          </ref>
+          <ref href="/krivicni#art_39">
+              39.
+          </ref>
+          <ref href="/krivicni#art_42">
+              42.
+          </ref>
+          <ref href="/krivicni#art_52">
+              52.
+          </ref>
+          <ref href="/krivicni#art_53">
+              53.
+          </ref>
+          <ref href="/krivicni#art_54">
+              54.
+          </ref>
+          Krivičnog zakonika Crne Gore te čl.
+          <ref href="/postupak#art_226">
+              226
+          </ref>
+          , 
+          <ref href="/postupak#art_229">
+              229
+          </ref>
+          ,
+          <ref href="/postupak#art_239">
+              239
+          </ref>
+          , i 
+          <ref href="/postupak#art_374">
+              374
+          </ref>
+          ZKP-a, i z r i č e
+          USLOVNU OSUDU
+          Sa kojom se optuženoj 
+          <party id="bv" showAs="B. V." as="defendant"> B.V. </party>
+          utvrdjuje kazna zatvora u trajanju od 6 (šest) mjeseci i istovremeno odredjuje da se ista neće izvršiti ako optužena u roku od jedne godine dana od 
+          pravosnažnosti ove presude ne izvrši novo krivično djelo.
+          Istovremeno sud 
+          <party id="bv" showAs="B. V." as="defendant"> optuženoj </party>
+            izriče novčanu kaznu u iznosu od 200 (dvesta) € koja će se u slučaju nenaplativosti zamijeniti kaznom zatvora tako što će se za s
+          vakih započetih 25,00 € novčane kazne odrediti jedan dan zatvora.
+          Izrečenu novčanu kaznu optužena je dužna platiti u roku od 6 (šest) mjeseci po pravosnažnosti ove presude.
+          Optužena je dužna platiti Budžetu Crne Gore na ime paušala iznos od 27,50 €.
+          Sve ovo u roku od 15.dana po pravosnažnosti presude pod prijetnjom prinudnog izvršenja.
+          Na osnovu čl.75 u vezi 
+          <ref href="/krivicni#art_265_para_1_point_1">
+            čl.265 st.1 Krivičnog zakonika Crne Gore
+          </ref>
+          prema optuženoj Beljkaš Vidosavi izriče se:
+          MJERA BEZBJEDNOSTI
+          Od 
+          <party id="bv" showAs="B.V." as="defendant"> optužene </party>
+          se kao predmet izvršenja krivičnog djela trajno oduzima 34 (tridesetčetvoro) prasadi ukupne težine 914 kg.
+        </p>
+      <conclusions>
+    </judgmentBody>
+  </judgment>
+</akomaNtoso>

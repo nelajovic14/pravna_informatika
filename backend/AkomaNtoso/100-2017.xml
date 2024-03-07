@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						OSNOVNI SUD U ROŽAJAMA
+					</FRBRauthor>
+					<FRBRdate date="2017-11-30">
+						2017-11-30
+					</FRBRdate>
+					<FRBRtitle>
+						K 100/17
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Rozaje" showAs="Osnovni sud u Rožajama" />
+				<TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Rozaje" showAs="Osnovno državno tužilaštvo Rožaje" />
+				<TLCPerson eId="mzekic" href="/ontology/person/mzekic" showAs="Miroslav Zekic" />
+				<TLCPerson eId="jnurkovic" href="/ontology/person/jnurkovic" showAs="Jasmina Nurkovic" />
+				<TLCPerson eId="np" href="/ontology/person/np" showAs="N. P." />
+				<TLCPerson eId="akalac" href="/ontology/person/akalac" showAs="Aladin Kalac" />
+                <TLCPerson eId="nh" href="/ontology/person/nh" showAs="N. H." />
+                <TLCPerson eId="rr" href="/ontology/person/rr" showAs="R. R." />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="interpreter" href="/ontology/role/interpreter" showAs="Interpreter" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="defenseattorney" href="/ontology/role/defenseattorney" showAs="Defense Attorney" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U ROŽAJAMA
+				</organization>
+				k.br. 100/17
+				U IME CRNE GORE
+				<party id="mzekic" refersTo="#mzekic" as="#judge">
+					Sudija Osnovnog suda u Rožajama Milosav Zekić
+				</party>
+				, uz učešće zapisničara
+				<party id="jnurkovic" refersTo="#jnurkovic" as="#clerk">
+					Jasmine Nurković
+				</party>
+				, rješavajući po optužnom predlogu Osnovnog državnog tužilaštva iz Rožaja Kt.br. 145/17 od 31.10.2017.g. podnijet protiv okrivljenog
+				<party id="np" refersTo="#np" as="#defendant">
+					N. P.
+				</party>
+				sa prebivalištem u ul. "Džordža Fred Vilijamsa", Opština Peć, Republika Kosovo, zbog krivičnog djela krijumčarenje iz
+				<ref href="/krivicni#art_265_st_1">
+					čl. 265. st. 1. KZCG
+				</ref>
+				, nakon održanog glavnog i javnog pretresa u prisustvu državnog tužioca
+				<party id="akalac" refersTo="#akalac" as="#plaintiff">
+					Aldina Kalača
+				</party>
+				, okrivljenog i njegovog branica adv.
+				<party id="hn" refersTo="#hn" as="#defenseattorney">
+					H. N.
+				</party>
+				i tumača za albanski jezik
+				<party id="rr" refersTo="#rr" as="#interpreter">
+					R. R.
+				</party>
+				, dana 30.11.2017. donio je i javno objavio:
+				P R E S U D U
+				<party id="np" refersTo="#np" as="#defendant">
+					Okrivljeni N. P.
+				</party>
+				, ID br. . od oca I. i majke F., rođ. M.rođen ..g. u selu Veliki Štupelj, sa prebivalištem u ul. "Džordža Fred Vilijamsa", Opština Peć, Republika 
+				Kosovo, državljanin Republike Kosovo, ne razumije crnogorski jezik, a njegov jezik je albanski, nezaposlen, oženjen, otac troje maloletne djece, 
+				pismen, završio SSS, siromašnog imovnog stanja.
+				K R I V J E
+				Što je:
+			</p>
+			<conclusions>
+				<p>
+				dana 13.10.2017.godine, oko 12,30 h, u mjestu zv. Kula, Opština Rožaje, u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je
+					znao da je njegovo djelo zabranjeno, bavio prenošenjem robe preko carinske linije izbjegavajući mjere carinskog nadzora i to: 28,68 kg supstance 
+					paracetamola i kofeina, upakovane u 22 kese, na način što je navedenu robu u Peći, sakrio na raznim mjestima u putničkom motornom vozilu marke 
+					„Polo“, reg. oznaka 03-731-FA i to u instrument tabli vozila ispod airbaga suvozača, ispod patosnice suvozača, u šupljinama zadnjih lijevih vrata 
+					ispod tapacira i ispod zadnjeg sjedišta, a nakon toga je sa vozilom i robom naišao na carinski prelaz „Kula“ kako bi prešao isti, a onda pomenutu
+					robu prevezao do Podgorice, ali je otkriven od strane službenika odjeljenja Granične bezbijednosti Rožaje,čime je izvršio krivično djelo krijumčarenje iz
+				<ref href="/krivicni#art_265_para_1_point_1">
+					čl. 265. st. 1. KZCG
+				</ref>.
+				pa ga sud primjenom pomenutog zakonskog propisa i
+				<ref href="/krivicni#art_4">
+					čl. 4
+				</ref>
+				,
+				<ref href="/krivicni#art_5">
+					5
+				</ref>
+				,
+				<ref href="/krivicni#art_13">
+					13
+				</ref>
+				,
+				<ref href="/krivicni#art_14">
+					14
+				</ref>
+				,
+				<ref href="/krivicni#art_15">
+					15
+				</ref>
+				,
+				<ref href="/krivicni#art_32">
+					32
+				</ref>
+				,
+				<ref href="/krivicni#art_36">
+					36
+				</ref>
+				,
+				<ref href="/krivicni#art_42">
+					42
+				</ref>
+				,
+				<ref href="/krivicni#art_45">
+					45
+				</ref>
+				,
+				<ref href="/krivicni#art_46_para_1_point_1_point_5">
+					46 st. 1. tač. 5. 
+				</ref>
+				KZCG i
+				<ref href="/postupak#art_374">
+					374
+				</ref>
+				ZKP,
+				OSUĐUJE
+				Na kaznu zatvora u trajanju od 48 dana u koju kaznu mu se ima uračunati vrijeme provedeno u pritvoru od 13.10.2017.g. do 30.11.2017.g. i novčanu 
+				kaznu u iznosu od 200,00 (dvijestotine) eura.
+				Ako 
+				<party id="np" refersTo="#np" as="#defendant">
+					osuđeni
+				</party>
+				ne plati novčanu kaznu u roku od 15 dana po pravosnažnosti ove presude, ista će se zamijeniti kaznom zatvora, tako što će se za svakih 
+				započetih 25,00 eura novčane kazne odrediti jedan dan kazne zatvora.
+				Obavezuje se 
+				<party id="np" refersTo="#np" as="#defendant">
+					okrivljeni 
+				</party>
+				da plati na ime troškova krivičnog postupka iznos od 150,00 eura i na ime paušala iznos od 30,00 eura u korist budžeta 
+				Crne Gore u roku od 15 dana po pravosnažnosti presude.
+				Troškovi krivičnog postupka u iznosu od 255,00 eura koji se odnose za prevođenje padaju na teret budžetskih sredstava.
+				<ref href="/krivicni#art_265_st_1">
+					Od okrivljenog N. P. se oduzima: 28,68 kg supstance paracetamola i kofeina, upakovane u 22 kese, kao predmeti izvršenja krivičnog djela.
+				</ref>
+				</p>
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>

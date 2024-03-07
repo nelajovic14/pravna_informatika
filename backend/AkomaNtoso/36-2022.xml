@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						Osnovni Sud u Pljevljima
+					</FRBRauthor>
+					<FRBRdate date="2022-09-14">
+						2022-09-14
+					</FRBRdate>
+					<FRBRtitle>
+						K 36/2022
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Pljevlja" showAs="Osnovni sud u Pljevljima" />
+				<TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo" showAs="Osnovno drzavno tuzilastvo" />
+				<TLCPerson eId="ljpopovic" href="/ontology/person/ljpopovic" showAs="Ljiljana Popović" />
+				<TLCPerson eId="mkrvavac" href="/ontology/person/mkrvavac" showAs="Mirjana Krvavac" />
+				<TLCPerson eId="igacevic" href="/ontology/person/igacevic" showAs="Ivan Gačević" />
+				<TLCPerson eId="sz" href="/ontology/person/sz" showAs="Š. Z." />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				<organization id="os" referesTo="#os">
+					OSNOVNI SUD U PLJEVLJIMA
+				</organization>
+				, po sudiji 
+				<party id="ljpopovic" refersTo="#ljpopovic" as="#judge">
+					Ljiljani Popović
+				</party>
+				uz sudjelovanje zapisničara 
+				<party id="mkrvavac" refersTo="#mkrvavac" as="#clerk">
+					Mirjane Krvavac
+				</party>
+				, u krivičnom predmetu protiv optuženog 
+				<party id="sz" refersTo="#sz" as="#defendant">
+					Š. Z.
+				</party>
+				iz P. zbog krivičnog djela krijumčarenje iz 
+				<ref href="/krivicni#art_265_para_1_point_1">
+					čl.265 st.1 Krivičnog zakonika Crne Gore
+				</ref>
+				a po optužnom predlogu 
+				<party id="odt" refersTo="#odt" as="#plaintiff">
+					ODT Pljevlja
+				</party>
+				Kt.br.67/22 od 01.06.2022. godine, nakon održanog glavnog i javnog pretresa u prisustvu 
+				<party id="igacevic" refersTo="#igacevic" as="#plaintiff">
+					DT Pljevlja Gačević Ivana
+				</party>
+				i optuženog 
+				<party id="sz" refersTo="#sz" as="#defendant">
+					Š. Z.
+				</party>
+				, dana 14.09.2022. godine donio je i javno objavio
+                P R E S U D U
+            
+                Optuženi 
+                <party id="sz" refersTo="#sz" as="#defendant">
+                    Š. Z.
+                </party>
+                JMBG .... od oca Lj. i majke R. rođene J., rođen u P. dana .... godine sa prebivalištem u Pljevljima ul...., državljanin Crne Gore, oženjen, 
+                otac troje punoljetno djece, vlasnik DOO „T.“, pismen, završio šumarski fakultet, govori srpskim jezikom, razumije crnogorski jezik, srednjeg 
+                imovnog stanja, živi od zarade od 200,00 € do 300,00 €, nevodi se postupak za drugo krivično djelo, osuđivan presudom Višeg suda u Bijelom Polju
+                    Kv.br.191/2015 na kaznu zatvora od 6 godina i 10 mjeseci zbog krivičnog djela neovlašćena proizvodnja, držanje i stavljanje u promet opojnih 
+                    droga iz 
+                    <ref href="/krivicni#art_300_para_1_point_1">
+                    čl.300 st.1 KZ CG
+                </ref>
+                    , presudom Višeg suda u Bijelom Polju Kv.br.203/13 od 08.01.2014.godine na kaznu zatvora u trajanju od 4 godine zbog 
+                    krivičnog djela neovlašćena proizvodnja, držanje i stavljanje u promet opojnih droga iz 
+                    <ref href="/krivicni#art_300_para_1_point_1">
+                    čl.300 st.1 KZ CG
+                </ref>
+                , presudom Osnovnog 
+                <organization id="os" referesTo="#os">
+					suda u Pljevjima 
+				</organization>
+                    K.br.169/09 od 21.12.2009
+                <party id="sz" refersTo="#sz" as="#defendant">
+                    Š. Z.
+                </party>
+            </p>
+            <conclusions>
+                <p>
+                K R I V J E
+                Što je:
+                Dana 12.05.2022.godine oko 19,55 časova u Pljevljima, svjestan svog djela čije je izvršenje htio iako je znao da je isto zabranjeno bavio se 
+                prenošenjem robe iz Bosne i Hercegovine u Crnu Goru preko carinske linije, izbjegavajući mjere carinskog nadzora, na način što je zaobilaznim
+                    makadamskim putem Foča (Bosna i Hercegovina)-Meštrevac-Glibaći (Crna Gora) zaobilazeći pritom granični i carinski prelaz, teretnim motornim 
+                    vozilom marke „VW Crafter“ reg.oznaka PV .... iz Bosne i Hercegovine u Crnu Goru prenio namještaj i to 7 dijelova garniture za sjedenje 
+                    bež boje upakovanih u najlonu i jedan ugao bež boje upakovan u najlonu pri čemu je u mjestu Ivlje opština Pljevlja zaustavljen i kontrolisan 
+                    od strane ovlašćenih policijskih službenika SGP Pljevlja,-
+                čime je izvršio krivično djelo krijumčarenje iz 
+                <ref href="/krivicni#art_265">
+                    čl.265 st.1 Krivičnog zakonika Crne Gore
+                </ref>
+                , pa ga 
+                <organization id="os" referesTo="#os">
+                    sud
+                </organization>
+                    primjenom citiranog zakonskog propisa, te 
+                <ref href="/krivicni#art_2">
+                    čl. 2
+                </ref>,
+                <ref href="/krivicni#art_4">
+                    4
+                </ref>,
+                <ref href="/krivicni#art_5">
+                    5
+                </ref>,
+                <ref href="/krivicni#art_13">
+                    13
+                </ref>,
+                <ref href="/krivicni#art_16">
+                    16
+                </ref>,
+                <ref href="/krivicni#art_17">
+                    17
+                </ref>,
+                <ref href="/krivicni#art_32">
+                    32
+                </ref>,
+                <ref href="/krivicni#art_36a">
+                    36-a
+                </ref>,
+                <ref href="/krivicni#art_39">
+                    39
+                </ref>,
+                <ref href="/krivicni#art_42">
+                    42
+                </ref>,
+                <ref href="/krivicni#art_45">
+                    45
+                </ref>,
+                <ref href="/krivicni#art_46">
+                    46
+                </ref>
+                Krivičnog zakonika Crne Gore i 
+                <ref href="/postupak#art_226">
+                    čl. 226
+                </ref>,
+                <ref href="/postupak#art_229">
+                    229
+                </ref>
+                i 
+                <ref href="/postupak#art_374">
+                    374
+                </ref>
+                Zakonika o krivičnom postupku Crne Gore.
+                O S U Đ U J E
+                Na kaznu zatvora od 2 (dva) mjeseca i istovremeno određuje da će se kazna izvršiti izdržavanjem u prostorijama u kojima optuženi stanuje,bez napuštanja prostorija u kojima stanuje, uz primjenu elektronskog nadzora.
+                Ukoliko optuženi jednom u trajanju preko šest časova ili dva puta u trajanju do šest časova, samovoljno napusti prostorije u kojima stanuje, sud će odrediti da ostatak kazne zatvora izdrži u Upravi za izvršenje krivičnih sankcija.
+                Istovremeno sud optuženom izriče novčanu kaznu u iznosu od 800 (osamstotina) € koja će se u slučaju nenaplativosti zamijeniti kaznom zatvora tako što će se za svakih započetih 25,00 € novčane kazne odrediti jedan dan zatvora.
+                Izrečenu novčanu kaznu optuženi je dužan platiti u roku od 6 (šest) mjeseci po pravosnažnosti ove presude.
+                Optuženi je dužan platiti na ime paušala iznos od 27,50 €,
+                a ovo u roku od 15 dana po pravosnažnosti pesude pod prijetnjom prinudnog izvršenja.
+                Na osnovu čl.75 u vezi čl.265 st.4 Krivičnog zakonika Crne Gore prema optuženom se izriče i
+                MJERA BEZBJEDNOSTI
+                Od optuženog se kao predmet izvršenja krivičnog djela trajno oduzimaju sedam dijelova garniture za sjedenje bež boje i jedan ugao bež boje.
+                </p>
+            </conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>
+

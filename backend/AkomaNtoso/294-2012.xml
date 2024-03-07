@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						OSNOVNI SUD U PODGORICI
+					</FRBRauthor>
+					<FRBRdate date="2012-04-20">
+						2012-04-20
+					</FRBRdate>
+					<FRBRtitle>
+						K 294/2012
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
+				<TLCPerson eId="jpkovacevic" href="/ontology/person/jpkovacevic" showAs="Jelena Perovic Kovacevic" />				
+				<TLCPerson eId="svlahovic" href="/ontology/person/svlahovic" showAs="Slađana Vlahović" />
+				<TLCPerson eId="dm" href="/ontology/person/dm" showAs="D. M." />
+				<TLCPerson eId="anastic" href="/ontology/person/anastic" showAs="Andrijana Nastic" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="defenseattorney" href="/ontology/role/defenseattorney" showAs="Defense Attorney" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U PODGORICI
+				</organization>
+				k.br.12/294
+				U IME CREN GORE
+				<party id="jpkovacevic" refersTo="#jpkovacevic" as="#judge">
+					Sudija pojedinac Jelena Perović Kovačević
+				</party>
+				, uz učešće
+				<party id="svlahovic" refersTo="#svlahovic" as="#clerk">
+					Slađane Vlahović
+				</party>
+				, kao zapisničara, u krivičnom predmetu protiv optuženog
+				<party id="zj" refersTo="#zj" as="#defendant">
+					Z.J.
+				</party>
+				, koga u postupku brani adv.
+				<party id="dm" refersTo="#dm" as="#defenseattorney">
+				 	D.M., 
+				</party>
+				zbog krivičnog djela krijumčarenje iz
+				<ref href="/krivicni#art_265_para_1_point_1">
+					čl.265 st.1 Krivičnog zakonika
+				</ref>
+				, odlučujući o optužnom predlogu ODT Podgorica Kti.br.372/12 od 15.03.2012. godine, koga je na ročištu povodom odlučivanja o sporazumu o priznavanju 
+				krivice zastupala 
+				<party id="anastic" refersTo="#anastic" as="#clerk">
+					Andrijana Nastić
+				</party>
+				, zamjenik ODT Podgorica, nakon donošenja rješenja o usvajanju sporazuma o priznavanju krivice, donio je dana 23.04.2011. godine
+				PRESUDU
+				<party id="zj" refersTo="#zj" as="#defendant">
+					Optuženi Z.J.
+				</party>
+				, od oca M. i majke L., rodjene Z., rodjen ... godine, u mjestu V., R. A., sa prebivalištem u P., Z. Ul. S. I., Albanac, oženjen, otac troje dejece, 
+				zaposlen u preduzeću "O. F." u T.- R. A., pismen, lošeg imovnog stanja.
+			</p>
+			<conclusions>
+				<p>
+				K r i v j e
+				Zato što je:
+				Dana 10.03.2012 godine, na carinskom prelazu Božaj, prenio robu preko carinske linije izbjegavajući mjere carinskog nadzora, a koju je nemajući 
+				ovlašćenje za troginu nobavio u Republici Albaniji, Grčkoj, Italiji i u svrhu prodaje unio na teritoriji Crne Goren na način što je na skrovitom
+					mjestu u svom putničkom vozilu marke "Pežo" reg. br. SH 3207E sakrio veću količinu ljekova i medikamenata, i to: 43 kutije lijeka Lendacin, 
+					10 bočica lijeka Dostinex, 20 kutija Nozinan 25 mg, 20 kutija lijeka Airol, 1 kutija lijeka Donogen 200 mg, 1 kutija lijeka Donogen 100 mg, 
+					4 kutije lijeka Betaserc, 1 kutija lijeka Gonasi HP 5000, 131 tabla lijeka Frisijum 10 mg, 100 tabli lijeka Rivotril 2 mg, 
+					20 tabli lije Frisijum 10 mg, 30 tabli lijeka Mylan, 16 tabli lijeka Rovamycine,1 aparat za pritisak marke Amron,1 aparat za pritisak 
+					marke Weinberger, 47 ampula lijeka Raciwel, 32 boce sirupa Nootom -paracetam, -30 kutija lijeka Ferlixit 62,5 mg/5, 1.100 kesica Aulin 100 mg,
+					100 kutija lijeka Plaquemil 200 mg, -20 kutija lijeka Butavate ointenent 25 gr, 15 komada Lamisil crema, 17 komada lijeka Aldactone 25 mg,
+					10 tabli lijeka Crestor 5 mg, 18 tabli lijeka Ditropan 5 mg, 10 kutija Inderali 40 mg, 15 kutija lijeka Edemid 500 mg,, 
+					240 kutija lijeka Cialis 20 mg, 240 kutija lijeka Viagra 100 mg,sve ukupna vrijenosti preko 3.000 eura, nakon čega je prilikom konktrole 
+					službenika UP PJ - Sektor granične policije u mejstu Vuksanlekići istog dana bio otkrivne prilikom vršenja kontrole predmetnog vozila.
+				<ref href="/krivicni#art_265_st_1">
+					čime je izvršio krivično djelo krijumčarenje iz
+				</ref>
+				Pa ga sud primjenom citiranih zakonsih odredbi, te članova 4 st.2, 32,33,36,42,45,46 i 51 Krivičnog zakonika, 
+				<ref href="/krivicni#art_4_para_1_point_2">
+					čl. 4 st.2
+				</ref>
+				,
+				<ref href="/krivicni#art_32">
+					32
+				</ref>
+				,
+				<ref href="/krivicni#art_33">
+					33
+				</ref>
+				,
+				<ref href="/krivicni#art_36">
+					36
+				</ref>
+				,
+				<ref href="/krivicni#art_42">
+					42
+				</ref>
+				,
+				<ref href="/krivicni#art_45">
+					45
+				</ref>
+				,
+				<ref href="/krivicni#art_46">
+					46
+				</ref>
+				i
+				<ref href="/krivicni#art_51">
+					51
+				</ref>
+				Krivičnog zakonika, kao i čl
+				<ref href="/postupak#art_226">
+					226
+				</ref>
+				,
+				<ref href="/postupak#art_229">
+					229
+				</ref>
+				,
+				<ref href="/postupak#art_303">
+					303. 
+				</ref>
+					Zakonika o krivičnom postupku
+				OSUĐUJE
+				Na kaznu zatvora u trajanju od 45 (četrdeset pet) dana, u koju kaznu im se uračunava vrijeme provedeno u pritvoru u trajanju od 10.03.2012. godine, 
+				od 23.00 časa pa do dana 23.04.2012 godine i na novčanu kaznu u iznosu od po 1.500,00€ (hiljadu i pesto eura).
+				Obavezuje se 
+				<party id="zj" refersTo="#zj" as="#defendant">
+					okrivljeni
+				</party>
+					da na ime troškova krivičnog postupka uplati iznos od 50,00€ na ime sudskog paušala, sve u roku od 15 od dana pravosnažnosti
+					presude pod prijetnjom prinudnog izvršenja.
+				</p>
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>

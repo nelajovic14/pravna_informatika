@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						Osnovni Sud u Rožajama
+					</FRBRauthor>
+					<FRBRdate date="2019-05-14">
+						2019-05-14
+					</FRBRdate>
+					<FRBRtitle>
+						K 64/2019
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Rozaje" showAs="Osnovni sud u Rožajama" />
+				<TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Rozaje" showAs="Osnovno državno tužilaštvo Rožaje" />
+				<TLCPerson eId="zcamic" href="/ontology/person/zcamic" showAs="Zahit Camić" />
+				<TLCPerson eId="shadzic" href="/ontology/person/shadzic" showAs="Sajmo Hadžić" />
+				<TLCPerson eId="aselmanovic" href="/ontology/person/aselmanovic" showAs="Selmanović Armin" />
+				<TLCPerson eId="bm" href="/ontology/person/bm" showAs="B. M." />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				<organization id="os" referesTo="#os">
+					OSNOVNI SUD U ROŽAJAMA
+				</organization>
+				i to Predsjednik suda 
+				<party id="zcamic" refersTo="#zcamic" as="#judge">
+					Camić Zahit
+				</party>
+                , kao sudija pojedinac, sa zapisničarem 
+				<party id="shadzic" refersTo="#shadzic" as="#clerk">
+					Sajmo Hadžić
+				</party>
+				, odlučujući po optužnom predlogu Osnovnog državnog tužilaštva iz Rožaja Kt.br. 71/19. od 14.05.2019.g, protiv okrivljenog 
+				<party id="bm" refersTo="#bm" as="#defendant">
+					B. M.
+				</party>
+				, iz P., zbog krivičnog djela krijumčarenje iz 
+				<ref href="/krivicni#art_265_para_1_point_1">
+					čl. 265. st. 1. Krivičnog Zakonika Crne Gore
+				</ref>
+				, nakon održanog glavnog i javnog pretresa u prisustvu Državnog Tužioca 
+				<party id="aselmanovic" refersTo="#aselmanovic" as="#plaintiff">
+					Selmanović Armina
+				</party>
+				iz Rožaja i okrivljenog, dana 14.05.2019.g. donio je i javno objavio,
+				P R E S U D U
+				Okrivljeni:
+				<party id="bm" refersTo="#bm" as="#defendant">
+					B. M.
+				</party>
+				, JMB ... , od oca M. i majke A. rodjena J., rodjen .... godine u P., sa prebivalištem u mjestu rodjena u ul. „K.“ br. ... , državljanin CG, razumije crnogorski jezik koji mu je i maternji, po zanimanju turistički tehničar, oženjen, otac dvoje djece, završio SSS, srednjeg imovnog stanja, neosudjivan.
+			</p>
+			<conclusions>
+				<p>
+				K R I V J E
+				Što je:
+				dana 10.04.2019.godine, u mjestu zv. D., O. R., u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, 
+				bavio se prenošenjem robe preko carinske linije, izbjegavajući mjere carinskog nadzora i to: 6 komada zvučnika N-18W, 4 komada zvučnika X-12CLA i 2 komada 
+				zvučnika N-15, na način što je robu prevezao svojim kombi vozilom marke Nisan reg. oznaka PG ... zaobilaznim putem, bez evidentiranja na graničnom prelazu D., O. R.,
+					izbjegavajući na taj način mjere carinskog nadzora,
+				-čime je izvršio krivično djelo krijumčarenje iz 
+				<ref href="/krivicni#art_265_para_1_point_1">
+					čl. 265. st. 1. Krivičnog zakonika Crne Gore
+				</ref>
+				.
+				Pa mu sud na osnovu pomenutog zakonskog propisa primjenom 
+				<ref href="/krivicni#art_3">
+					čl. 3.
+				</ref>
+				<ref href="/krivicni#art_4">
+					4.
+				</ref>
+				<ref href="/krivicni#art_5">
+					5.
+				</ref>
+				<ref href="/krivicni#art_13">
+					13.
+				</ref>
+				<ref href="/krivicni#art_15">
+					15.
+				</ref>
+				<ref href="/krivicni#art_32">
+					32.
+				</ref>
+				<ref href="/krivicni#art_36">
+					36.
+				</ref>
+				<ref href="/krivicni#art_39">
+					39.
+				</ref>
+				<ref href="/krivicni#art_46_para_1_point_1_point_5">
+					46.
+				</ref>
+				<ref href="/krivicni#art_52">
+					52.
+				</ref>
+				<ref href="/krivicni#art_53">
+					53.
+				</ref>
+				<ref href="/krivicni#art_54">
+					54.
+				</ref>
+				<ref href="/krivicni#art_256_para_1_point_4">
+					265. st. 4 
+				</ref>
+				Krivičnog zakonika Crne Gore, 
+				<ref href="/postupak#art_226">
+					226.
+				</ref>
+				<ref href="/postupak#art_229">
+					229.
+				</ref>
+				i 
+				<ref href="/postupak#art_374">
+					374.
+				</ref>
+				Zakonika o krivičnom postupku, izriče
+				USLOVNU OSUDU
+				Kojom mu utvrdjuje kaznu zatvora u trajanju od 45 (četrdesetpet) dana i istovremeno odredjuje da se ista neće izvršiti ukoliko isti u roku od 1 
+				(jedne) godine po pravosnažnosti presude ne izvrši novo krivično djelo i
+				OSUDJUJE
+				Na novčanu kaznu u iznosu od 200,00 eura koju je dužan da plati u roku od 15 dana po pravosnažnosti presude. Ako novčanu kaznu ne plati u ovom roku,
+					sud će istu zamijeniti kaznom zatvora, tako što će za svakih započetih 25,00 eura novčane kazne odrediti jedan dan zatvora.
+				Da plati u korist budžetskih sredsava na ime troškova krivičnog postupka-paušala iznos od 40,00 eura.
+				<party id="bm" refersTo="#bm" as="#defendant">
+					Okrivljenom
+				</party>
+					se izriče
+				MJERA BEZBIJEDNOSTI
+				Od 
+				<party id="bm" refersTo="#bm" as="#defendant">
+					okrivljenog
+				</party>
+					se oduzima i to: 6 komada zvučnika N-18W, 4 komada zvučnika X-12CLA i 2 komada zvučnika N-15 kao predmeti izvršenog krivičnog djela.
+				Sve u roku od 15 dana po pravosnažnosti presude.
+				</p>
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>

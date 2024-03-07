@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						Osnovni Sud u Beranama
+					</FRBRauthor>
+					<FRBRdate date="2011-06-22">
+						2011-06-22
+					</FRBRdate>
+					<FRBRtitle>
+						K 10/2011
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Berane" showAs="Osnovni sud u Beranama" />
+				<TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo" showAs="Osnovno drzavno tuzilastvo" />
+				<TLCPerson eId="aculafica" href="/ontology/person/aculafica" showAs="Aleksandra Culafica" />
+				<TLCPerson eId="mpaunovic" href="/ontology/person/mpaunovic" showAs="Milorad Paunovic" />
+				<TLCPerson eId="skukalja" href="/ontology/person/skukalja" showAs="Stojana Kukalja" />
+				<TLCPerson eId="mlekic" href="/ontology/person/mlekic" showAs="Mirosava Lekic" />
+				<TLCPerson eId="jmicovic" href="/ontology/person/jmicovic" showAs="Jadranka Micovic" />				
+                <TLCPerson eId="rf" href="/ontology/person/rf" showAs="R.F." />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="advisor" href="/ontology/role/advisor" showAs="Advisor" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				<organization id="os" referesTo="#os">
+					OSNOVNI SUD U BERANAMA
+				</organization>
+				, kao krivični prvostepeni sud, u vijeću sastavljenom od 
+				<party id="aculafica" refersTo="#aculafica" as="#judge">
+					sudija Aleksandra Ćulafića
+				</party>
+				, kao predsjednika vijeća, i
+                <party id="mpaunovic" refersTo="#mpaunovic" as="#judge">
+					sudija Milorada Paunovića
+				</party>
+                i 
+                <party id="skukalja" refersTo="#skukalja" as="#judge">
+					Stojana Kukalja
+				</party>
+                , kao članova vijeća, uz učešće 
+				<party id="mlekic" refersTo="#mlekic" as="#clerk">
+					namještenika suda Miroslave Lekic
+				</party>
+				, kao zapisničara, rješavajući po optužnici 
+				<party id="odt" referesTo="#odt">
+					Osnovnog državnog tužilaštva
+				</party>
+				 u Beranama Kt.br. 450/2010 od 29.12.2010. godine, podnijetom protiv optuženog 
+				<party id="rf" refersTo="#rf" as="#defendant">
+					R . F .
+				</party>
+				, iz Berana, zbog krivičnog djela krijumčarenje iz 
+				<ref href="/krivicni#art_265">
+					čl. 265 st. 1 Krivičnog zakonika
+				</ref>
+				, nakon održanog glavnog i javnog pretresa du prisustvu zamjenika ODT-a u Beranama,
+				<party id="jmicovic" refersTo="#jmicovic" as="#plaintiff">
+					Savović Vladimira
+				</party>
+				i
+				<party id="rf" refersTo="#rf" as="#defendant">
+					okrivljenog
+				</party>
+				, donio je i javno objavio dana  22.06.2011. godine, P R E S U D U Okrivljeni R. F., od oca Š. i majke I., rođene L., rođen ... godine u B., sa prebivalištem u mjestu S. B., opština B., državljanin Crne Gore, po zanimanju poljoprivrednik, pismen, sa završenom OŠ, srednjeg imovnog stanja, osuđivan presudom 
+				<organization id="os" referesTo="#os">
+						Osnovnog suda u Beranama
+					</organization> 
+					K.br. ... od 22.02.2010. 
+                godine po 
+                <ref href="/krivicni#art_168">
+                čl. 168 st. 2 KZ CG
+                </ref>
+                , osuđen 6 mjeseci zatvora, uslovno za jednu godinu.
+			</p>
+			<conclusions>
+				<p>
+					K r i v     je
+					- što je:
+					- dana 30.08.2010. godine, preko carinske linije, mimo graničnog prelaza D., kod Rožaja, izbjegavajući mjere carinskog nadzora prenio robu, na 
+					način što je traktorom marke "IMT"539, reg. br. ..., na tovarnom sanduku - prikolici, prevezao: 2000 metara crnog plastičnog podzemnog crijeva za
+						vodu, od pola cola, vrijednosti 500,00 € iz Republike Srbije, a što je utvrđeno kontrolom granične policije Uprave policije PJ B., istog dana u 
+						mjestu N. V., opština Berane,
+					- čime je izvršio krivično djelo krijumčarenje iz 
+					<ref href="/krivicni#art_265">
+					čl. 265 st. 1 Krivičnog zakonika,
+					</ref>
+					pa ga
+					<organization id="os" referesTo="#os">
+						sud
+					</organization>
+					primjenom citiranih zakonskih propisa, te
+					<ref href="/krivicni#art_2">
+						čl. 2
+					</ref>
+					,
+					<ref href="/krivicni#art_4">
+						4
+					</ref>
+					,
+					<ref href="/krivicni#art_5">
+						5
+					</ref>
+					,
+					<ref href="/krivicni#art_13">
+						13
+					</ref>
+					,
+					<ref href="/krivicni#art_15">
+						15
+					</ref>
+					,
+					<ref href="/krivicni#art_32">
+						32
+					</ref>
+					,
+					<ref href="/krivicni#art_36">
+						36
+					</ref>
+					,
+					<ref href="/krivicni#art_39">
+						39
+					</ref>
+					,
+					<ref href="/krivicni#art_42">
+						42
+					</ref>
+					,
+					<ref href="/krivicni#art_45">
+						45
+					</ref>
+					,
+					<ref href="/krivicni#art_46">
+						46
+					</ref>
+					i
+					<ref href="/krivicni#art_75">
+						75
+					</ref>
+					Krivičnog zakonika, i
+					<ref href="/postupak#art_199_para_1_point_1">
+						čl.199 st. 1
+					</ref>
+					,
+					<ref href="/postupak#art_364">
+						364
+					</ref>
+					ZKP-a CG,
+					O S U Đ U J E
+				- na kaznu zatvora od 30 (trideset dana), kao glavnu kaznu i
+				- na novčanu kaznu u iznosu od 300,00 € (tri stotine eura), kao sporednu kaznu, koju je dužan da plati u roku od 3 mjeseca po pravosnažnosti presude.
+				Ako 
+				<party id="rf" refersTo="#rf" as="#defendant">
+					osuđeni
+				</party> 
+				ne plati novčanu kaznu u određenom roku, sud će novčanu kaznu zamjeniti kaznom zatvora, tako što će za svakih započetih 25,00 € novčane kazne odrediti 
+				jedan dan zatvora, a ako 
+				<party id="rf" refersTo="#rf" as="#defendant">
+					osuđeni
+				</party>  plati samo dio novčane kazne, sud će ostatak kazne srazmjerno zamjeniti kaznom zatvora, pa ako 
+				<party id="rf" refersTo="#rf" as="#defendant">
+					osuđeni
+				</party> 
+				isplati ostatak novčane kazne, izvršenje kazne zatvora će se obustaviti. 
+				<party id="rf" refersTo="#rf" as="#defendant">
+					osuđeni
+				</party> 
+				se obavezuje da na ime paušala plati ovom sudu iznos od 30,00 €,  kao i na ime troškova krivičnog postupka iznos od 66,00 € na račun br. 
+				832-150-38 Osnovnog 
+				<organization id="os" referesTo="#os">
+					suda
+				</organization>
+					Berane, a sve prednje u roku od 15 dana po pravosnažnosti presude, pod prijetnjom posledica prinudnog izvršenja. 
+				Shodno čl. 
+				<ref href="/krivicni#art_75">
+					75
+				</ref>
+				Krivičnog zakonika, optuženom se izriče mjera bezbjednosti oduzimanja 2000 metara crnog plastičnog podzemnog crijeva za vodu, od pola cola.
+				</p>
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>

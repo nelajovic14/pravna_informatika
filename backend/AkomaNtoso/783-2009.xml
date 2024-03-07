@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						OSNOVNI SUD U BIJELOM POLJU
+					</FRBRauthor>
+					<FRBRdate date="2010-04-16">
+						2010-04-16
+					</FRBRdate>
+					<FRBRtitle>
+						K 783/09
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+				<TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo Bijelo Polje" />
+				<TLCPerson eId="rbanda" href="/ontology/person/rbanda" showAs="Rahma Banda" />
+				<TLCPerson eId="pmiljan" href="/ontology/person/pmiljan" showAs="Pešić Miljan" />
+				<TLCPerson eId="gbecirovic" href="/ontology/person/gbecirovic" showAs="Bećirović Gana" />
+				<TLCPerson eId="lj.p" href="/ontology/person/lj.p" showAs="LJ.P." />
+				<TLCPerson eId="hh" href="/ontology/person/hh" showAs="H.H." />
+				<TLCPerson eId="kda" href="/ontology/person/kda" showAs="K.D.a" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="juror" href="/ontology/role/juror" showAs="Juror" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U BIJELOM POLJU
+				</organization>
+				kao prvostepeni krivični, u vijeću sastavljenom od sudije
+				<party id="rbanda" refersTo="#rbanda" as="#judge">
+					Rahma Banda
+				</party>
+				kao predsjednika vijeća, i sudija porotnika
+				<party id="pmiljan" refersTo="#pmiljan" as="#juror">
+					Pešić Miljan
+				</party>
+				i
+				<party id="gbecirovic" refersTo="#gbecirovic" as="#juror">
+					Bećirović Gana
+				</party>
+				kao članova vijeća, uz učešće zapisničara
+				<party id="lj.p" refersTo="#lj.p" as="#clerk">
+					LJ.P.
+				</party>
+				, rješavajući u krivičnom predmetu protiv optuženog
+				<party id="hh" refersTo="#hh" as="#defendant">
+					H.H.a
+				</party>
+				iz Sjenice Republika Srbija, zbog krivičnog djela krijumčarenje iz
+				<ref href="/krivicni#art_265_para_1_point_1">
+					čl. 265. st. 1. Krivičnog Zakonika CG
+				</ref>
+				, postupajući po Optužnici ODT iz Bijelog Polja Kt.br.620/09 od 20.10.2009. godine, nakon održanog, usmenog, glavnog i javnog pretresa u prisustvu 
+                zamjenika ODT iz Bijelog Polja
+				<party id="perovic" refersTo="#perovic" as="#plaintiff">
+					Perović Cmiljane
+				</party>
+				i branioca optuženog
+				<party id="kda" refersTo="#kda" as="#defendant">
+					K.D.a
+				</party>
+				adv. iz Bijelog Polja, koji je postavljen po službenoj dužnosti, a u odsustvu optuženog
+				<party id="hh" refersTo="#hh" as="#defendant">
+					H.H.a
+				</party>
+				, donio je dana 16.04.2010. godine i javno objavio:
+				P R E S U D U
+				<party id="hh" refersTo="#hh" as="#defendant">
+					Optuženi H.H.
+				</party>
+				, od oca I. i majke E. rodjene G., rodjen .... godine u Sjenici Opština Sjenica R.Srbija, sa prebivalištem u mjestu rodjenja - Dubnica, pismen, 
+                po zanimanju prosvjetni radnik, sa završenom VSS, oženjen, otac jednog djeteta, nezaposlen, državljanin R.Srbije, srednjeg imovnog stanja, 
+                vojsku služio,
+				osudjivan.
+			</p>
+			<conclusions>
+				<p>
+				K R I V J E
+				Što je:
+				- dana 29.09.2009.godine oko 08,00 h, izbjegavajući mjere carinskog nadzora na carinskom prelazu Dobrakovo, Opština Bijelo Polje, preko carinske 
+				linije, zaobilaznim putem borišići - Bistrica, svojim putničkim motornim vozilom marke '' Golf II'' reg.br. NP 654-23, prenio 123 plastične kante 
+				sa paprikama u pavlaci, težine oko 250 gr, ukupne vrijednosti oko 600,00 eura, iz Republike Srbije u Crnu Goru, pri čemu je u mjestu Konatari, 
+				Opština Bijelo polje, zaustavljen i kontrolisan od strane ovlašćenih službenika
+				<organization id="upravapolicije" refersTo="#upravapolicije" as="#clerk">
+					Uprapve Policije - Ispostave graničnen policije Bijelo Polje
+				</organization>
+				,
+				- čime je izvršio krivično djelo krijumčarenje iz
+				<ref href="/krivicni#art_265_st_1">
+					čl. 265. st. 1. Krivičnog Zakonika CG
+				</ref>
+				.
+				Pa ga sud primjenom citiranih zakonskih poropisa i
+				<ref href="/krivicni#art_2">
+					čl. 2
+				</ref>
+				,
+				<ref href="/krivicni#art_4">
+					4
+				</ref>
+				,
+				<ref href="/krivicni#art_5">
+					5
+				</ref>
+				,
+				<ref href="/krivicni#art_13">
+					13
+				</ref>
+				,
+				<ref href="/krivicni#art_15">
+					15
+				</ref>
+				,
+				<ref href="/krivicni#art_32">
+					32
+				</ref>
+				,
+				<ref href="/krivicni#art_36">
+					36
+				</ref>
+				,
+				<ref href="/krivicni#art_39">
+					39
+				</ref>
+				,
+				<ref href="/krivicni#art_42">
+					42
+				</ref>
+				,
+				<ref href="/krivicni#art_45">
+					45
+				</ref>
+				i
+				<ref href="/krivicni#art_46_para_1_point_1_point_5">
+					46 st. 1. tač. 5. Krivičnog Zakonika CG
+				</ref>
+				, te
+				<ref href="/postupak#art_199">
+					čl. 199
+				</ref>
+				,
+				<ref href="/postupak#art_202">
+					202
+				</ref>
+				i
+				<ref href="/postupak#art_364">
+					364
+				</ref>
+				ZKP-a,
+				O S U DJ U J E
+				Na kaznu zatvora u trajanju od 30. (trideset) dana, i
+				Na novčanu kaznu u iznosu od 200,00 € (dvijestotine eura), koju kaznu je dužan da platu ovom sudu u roku od 3 (tri) mjeseca po pravosnažnosti 
+				presude, ako 
+				<party id="hh" refersTo="#hh" as="#defendant">
+					osudjeni
+				</party>
+					ne plati novčanu kaznu u odredjenom roku, sud će novčanu kaznu zamijeniti kaznom zatvora, tako što će za svakih započetih 
+				25,00 € (dvadesetpet eura), novčane kezne odrediti jedan dan zatvora, a ako osudjeni plati samo dio novčane kazne, sud će ostatak kazne srazmjerno 
+				zamijeniti kaznom zatvora, pa ako osudjeni isplati ostatak novčane kazne, izvršenje kazne zatvora će se obustaviti.
+				Obavezuje se okrivljeni da na ime paušala plati ovom sudu iznos od 30,00 € (trideset eura), kao i na ime troškova krivičnog postupka 375,00 eura 
+				(tristasedamdesetpet eura) u roku od 15. dana po pravnosnažnosti presude.
+				Od optuženog se oduzimaju 123 plastične kante sa paprikama u pavlaci težine od 250 kgr, kao predmeti koji su upotrijebljeni za izvršenje krivičnog
+					djela a na osnovu
+				<ref href="/krivicni#art_66">
+					čl. 66
+				</ref>
+				,
+				<ref href="/krivicni#art_67_para_1_point_7">
+					67. tač. 7
+				</ref>
+				i
+				<ref href="/krivicni#art_75_para_1_point_3">
+					75 u vezi st. 3. KZ CG
+				</ref>
+				.
+				</p>
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>

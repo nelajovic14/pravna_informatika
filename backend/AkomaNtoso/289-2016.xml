@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Podgorici
+                    </FRBRauthor>
+                    <FRBRdate date="2016-06-17">
+                        2016-06-17
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 289/2016
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
+                <TLCPerson eId="zjovovic" href="/ontology/person/zjovovic" showAs="Zeljka Jovovic" />
+                <TLCPerson eId="drajkovic" href="/ontology/person/drajkovic" showAs="Danijela Rajkovic" />
+                <TLCPerson eId="na" href="/ontology/person/na" showAs="N. A." />
+                <TLCPerson eId="dđ" href="/ontology/person/dđ" showAs="D. Đ." />
+                <TLCPerson eId="mk" href="/ontology/person/mk" showAs="M. K." />
+                <TLCPerson eId="imedojevica" href="/ontology/person/imedojevica" showAs="Ivan Medojevic" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+                <TLCRole eId="defenseattorney" href="/ontology/role/defenseattorney" showAs="Defense Attorney" />
+
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U PODGORICI
+                </organization>
+                , kao prvostepeni, krivični, po sutkinji
+                <party id="mzekic" refersTo="#zjovovic" as="#judge">
+                    Željki Jovović
+                </party>
+                , uz učešće
+                <party id="drajkovic" refersTo="#drajkovic" as="#clerk">
+                    Danijele Rajkvoić
+                </party>
+                , kao zapisničarke, u krivičnom predmetu, protiv optuženog 
+                <party id="na" href="/ontology/person/na" as="#defendant">
+                    N. A.
+                </party>
+                , zbog krivičnog djela krijumčarenje putem pomaganja iz čl. 265 st. 2 u vezi čl. 25 Krivičnog zakonika Crne Gore, rješavajući po optužnici Osnovnog državnog tužilaštva Podgorica Kt. br. 465/16 od 06. 05. 2016. godine, nakon održanog glavnog, javnog pretresa, dana 17. 06. 2016. godine, u prisustvu zastupnika optužnice 
+                <party id="imedojevica" refersTo="#imedojevica" as="#plaintiff">
+                    Ivana Medojevića
+                </party>
+                , državnog tužioca u ODT- u Podgorica, optuženog i njegovih branilaca adv.
+                <party id="dđ" referesTo="#dđ" as="defenseattorney">D. Đ.</party>
+                 i adv. 
+                <party id="mk" referesTo="#mk" as="defenseattorney">M. K.</party>
+                <party id="na" href="/ontology/person/na" as="#defendant">N. A. </party>, JMB xxxxxxxxxxxxx, od oca R. i majke Lj., rođene K., rođen xx. xx. 19xx. godine u Podgorici, sa prebivalištem u mjestu rođenja Golubovci bb, državljanin Crne Gore, 
+                nezaposlen, neoženjen, bez djece, završio srednju trgovinsku školu, lošeg imovnog stanja, neosuđivan, u pritvoru od 08. 04. 2016. godine od 07:00 časova, 
+                po rješenju sudije za istragu Osnovnog suda u Podgorici Kri. br. 183/16 od 09. 04. 2016. godine.
+             </p>
+            <conclusions>
+                <p>
+                Kriv je
+                Što je:
+                U novembru 2015. godine u Podgorici, svjestan svog djela čije izvršenje je htio, znajući da je njegovo djelo zabranjeno, stvaranjem uslova pomogao 
+                V. V. da izvrši krivično djelo, na način što je znajući da će V. V. iz Crne Gore, vozilom da prenese preko carinske linije, izbjegavajući mjere 
+                carinskog nadzora, veću količinu oružja, municije i eksplozivnih materija čije držanje je građanima zabranjeno, u otvorima vozila marke "Golf V", 
+                registarskih oznaka PG FAxxx, spakovao i to: 8 komada automatskih pušaka - kalašnjikov, 8 okvira za te puške, 150 komada municije, 2 pištolja, 
+                1 revolver, 2 ručne granate i 200 g TNT eksploziva sa detonatorom, tako što ga je oblijepio selotejp trakom i sakrio ispod haube vozila, u otvoru 
+                ispod brisača, u gepeku ispod tapacira i u otvorima sa donje strane vozila, nakon čega je V. V. sa ovako sakrivenim oružjem, prešao granicu sa 
+                Republikom Hrvatskom, na graničnom prelazu "Kobila", a zatim nastavio do Savezne Republike Njemačke, gdje je dana 05. 11. 2015. godine, u blizini 
+                mjesta Bad Feilnbach, otkriven od strane bavarske policije, nakon čega je protiv V. V. pokrenut od strane njemačkih pravosudnih organa krivični 
+                postupak zbog kršenja Zakona o kontroli ratnog naoružanja - transport, izvoz i prevoz raznog naoružanja bez dozvole,
+                čime je izvršio krivično djelo krijumčarenje putem pomaganja iz čl.
+                <ref href="/krivicni#art_265_para_1_point_2">
+                    čl. 265. st. 1.
+                </ref>
+                u vezi
+                <ref href="/krivicni#art_23_para_1_point_2">
+                    čl. 25
+                </ref>
+                Pa ga Sud primjenom citiranih zakonskih odredbi te 
+                <ref href="/krivicni#art_4_para_2">
+                    čl. 4. st. 2
+                </ref>
+                ,
+                <ref href="/krivicni#art_32">
+                    32.
+                </ref>
+                ,
+                <ref href="/krivicni#art_36">
+                    36.
+                </ref>
+                ,
+                <ref href="/krivicni#art_36a">
+                    39
+                </ref>
+                ,
+                <ref href="/krivicni#art_42_para_1_point_3">
+                    42.
+                </ref>
+                ,
+                <ref href="/krivicni#art_45">
+                    45.
+                </ref>
+                ,
+                <ref href="/krivicni#art_46_para_1_point_1_point_4">
+                    46. st. 1. tač. 4. 
+                </ref>
+                ,
+                <ref href="/krivicni#art_46_para_1_point_1_point_4">
+                    čl 51 
+                </ref>
+                Krivičnog Zakonika Crne Gore, te 
+                <ref href="/postupak#art_226">
+                    čl. 226
+                </ref>
+                ,
+                <ref href="/postupak#art_229">
+                    čl. 229
+                </ref> i 
+                <ref href="/postupak#art_374">
+                    374
+                </ref>
+                Zakonika o krivičnom postupku,
+                O S U Đ U J E
+                Na kaznu zatvora u trajanju od 8 (osam) mjeseci, u koju kaznu mu se uračunava vrijeme provedeno u pritvoru od 08. 04. 2016. godine od 07:00 časova, pa nadalje dok pritvor bude trajao i
+                O S U Đ U J E
+                Na novčanu kaznu u iznosu od 1.200,00 eura (hiljadudvijestotine eura) koju je optuženi dužan platiti u roku od 3 (tri) mjeseca po pravosnažnosti presude pod prijetnjom prinudnog izvršenja, a ako izrečenu novčanu kaznu ne plati u određenom roku, sud će novčanu kaznu zamijeniti kaznom zatvora, tako što će za svakih započetih 25,00€ (dvadesetpeteura) novčane kazne odrediti jedan dan kazne zatvora, s tim da kazna zatvora ne može biti duža od 6 (šest) mjeseci.
+                Obavezuje se optuženi da plati po osnovu troškova krivičnog postupka iznos od 30,00 eura, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>
