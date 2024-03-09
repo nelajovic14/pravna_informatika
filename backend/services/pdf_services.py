@@ -1,18 +1,16 @@
-import PyPDF2
+from services.convertor import pdf_to_bytesio
+import os
 
 
 def get_pdf_content(id):
-    # Path to your PDF file
-    pdf_path = 'C:\\Users\\Korisnik\\Desktop\\Pravna Informatika\\pravna_informatika\\backend\\output.pdf'
+    current_directory = os.getcwd()
+    pdf_path = current_directory + "\\cases_pdf\\" + id 
     
-    # Open PDF file
-    with open(pdf_path, 'rb') as file:
-        pdf_reader = PyPDF2.PdfReader(file)
-        
-        # Extract text content from each page
-        pdf_content = []
-        for page in pdf_reader.pages:
-            pdf_content.append(page.extract_text())
-    
-    # Return PDF content as JSON
-    return pdf_content
+    return pdf_to_bytesio(pdf_path)
+
+def get_list_of_all_pdf_cases():
+    current_directory = os.getcwd()
+    folder_path = current_directory + "\\cases_pdf"
+    files = os.listdir(folder_path)
+    return files
+

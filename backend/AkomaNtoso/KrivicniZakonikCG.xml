@@ -98,7 +98,7 @@
 				<heading>
 					KRIVIČNO DJELO
 				</heading>
-				<secation eId="chp_2_sec_1">
+				<section eId="chp_2_sec_1">
 					<article eId="art_5">
 						<num>
 							Član 5
@@ -128,7 +128,7 @@
 							</point>
 							<point eId="art_13_para_1_point_2">
 								<num>
-									1)
+									2)
 								</num>
 								<content eId="art_13_para_1_point_2_content">
 									<p>

@@ -1,0 +1,7 @@
+.mycontainer {
+    display: flex;
+  }
+  
+  .mycontainer > div {
+    flex: 1;
+  }
