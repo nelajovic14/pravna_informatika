@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import DetailedCoursePdfItem from './components/DetailedCoursePdfItem';
-import HTMLViewer from './components/HTMLViewer';
+import MainPage from './components/MainPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DetailedCoursePdfItem />
+    <MainPage />
   </React.StrictMode>
 );
 

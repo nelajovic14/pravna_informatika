@@ -1,11 +1,11 @@
 import axios from "axios";
 
-export const getPdfById = async(id)=>{
-  return await axios.get(`http://localhost:5001/api/file/pdf/${id}`);
-}
-
 export const getAllCases = async()=>{
   return await axios.get(`http://localhost:5001/api/file/getcases`);
+}
+
+export const getAllHTMLCases = async()=>{
+  return await axios.get(`http://localhost:5001/api/file/html/getcases`);
 }
 
 export const getHTMLById = async(id)=>{
