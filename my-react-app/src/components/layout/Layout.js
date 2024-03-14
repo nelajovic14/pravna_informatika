@@ -23,12 +23,14 @@ const LayoutPage = () => {
             <Stack direction="row" spacing={2}>
                 <ul  class="list-inline">
                     <li>
-                        <Link to="/PDFFiles" ><Button href="#text-buttons" style={{fontSize:15}}>PDF files &nbsp;</Button></Link>
+                        <Link to="/PDFFiles" ><Button href="#text-buttons" style={{fontSize:15, color:'black'}}>PDF files &nbsp;</Button></Link>
                     </li>
                     <li>
-                        <Link to="/HTMLFiles"><Button href="#text-buttons" style={{fontSize:15}}>AkomaNtoso files &nbsp;</Button></Link>
+                        <Link to="/HTMLFiles"><Button href="#text-buttons" style={{fontSize:15, color:'black'}}>AkomaNtoso files &nbsp;</Button></Link>
                     </li>
-                    
+                    <li>
+                        <Link to="/NewCase"><Button href="#text-buttons" style={{fontSize:15, color:'black'}}>New Case &nbsp;</Button></Link>
+                    </li>
                 </ul>
             </Stack>
             <Outlet />
