@@ -1,0 +1,8 @@
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case> .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#defendant> "John" .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#name> "case 01" .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#avoiding_customs_supervision> "yes" .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#has_weapon> "no" .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#use_force_or_threat> "no" .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#forbbiden_goods> "no" .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#sale_or_hidding_goods> "no" .

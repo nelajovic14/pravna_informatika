@@ -20,21 +20,24 @@ export default function PDFItems() {
     setPdf(pdf_link)
   };
 
-  return (    
-    <div width="80%"style={{display:"flex"}} >
-      <div width="500mpx"> 
-      PDF Cases and Law :     
-        {cases.map((link, index) => (
-        <div width="1000mpx">
-        <a key={index} href={`#${link}`} onClick={() => handleClick(link)}>
-          {link}
-        </a><br/>
+  return (
+    <div style={{ width: "100%", display: "flex", float:'left', justifyContent: "flex-start" }}>
+  <div style={{ width: "165px", background: "#f0f0f0", padding: "10px", borderRadius: "5px" }}>
+    <h2 style={{ margin: "0", fontSize: "18px" }}>PDF Cases and Law:</h2>
+    <div style={{ marginTop: "10px" }}>
+      {cases.map((link, index) => (
+        <div key={index} style={{ marginLeft: "10px" }}>
+          <a href={`#${link}`} onClick={() => handleClick(link)}>
+            {link}
+          </a><br />
         </div>
-        ))}
-      </div>
-
+      ))}
+    </div>
+  </div>
+    
+      <br/>
       <div id="pdf_doc" style={{float:"right"}} >
-      {pdf && <embed src={pdf} type="application/pdf"  height="600px" width="1000mpx" />}
+      {pdf && <embed src={pdf} type="application/pdf"  height="650px" width="1350mpx" />}
       </div>
     </div>
   );
