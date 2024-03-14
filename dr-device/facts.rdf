@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+        xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
+    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01">
+        <lc:defendant>John</lc:defendant>
+        <lc:name>case 01</lc:name>
+        <lc:avoiding_customs_supervision>yes</lc:avoiding_customs_supervision>
+        <lc:has_weapon>yes</lc:has_weapon>
+        <lc:use_force_or_threat>yes</lc:use_force_or_threat>
+        <lc:forbbiden_goods>no</lc:forbbiden_goods>
+        <lc:sale_or_hidding_goods>no</lc:sale_or_hidding_goods>
+    </lc:case>
+</rdf:RDF>
