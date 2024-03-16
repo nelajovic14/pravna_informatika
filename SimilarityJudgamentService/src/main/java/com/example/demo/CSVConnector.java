@@ -25,13 +25,18 @@ public class CSVConnector implements Connector {
 
 			String line = "";
 			while ((line = br.readLine()) != null) {
-				if (line.startsWith("#") || (line.length() == 0))
+				if (line.startsWith("#") || line.startsWith("id") || (line.length() == 0))
 					continue;
 				String[] values = line.split(";");
 
 				CBRCase cbrCase = new CBRCase();
 
 				CaseDescription caseDescription = new CaseDescription();
+				
+				for(int i = 0; i < values.length; i++)
+				{
+					System.out.println(i + ": " + values[i]);
+				}
 				
 				caseDescription.setId(Integer.parseInt(values[0]));
 				caseDescription.setSud(values[1]);

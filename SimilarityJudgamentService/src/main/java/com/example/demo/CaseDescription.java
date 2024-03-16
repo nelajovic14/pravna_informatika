@@ -48,7 +48,7 @@ public class CaseDescription implements CaseComponent {
 		this.upotrebaSileIliPretnje = upotrebaSileIliPretnje;
 	}
 	
-	public String getPrnosOruzja() {
+	public String getPrenosOruzja() {
 		return prenosOruzja;
 	}
 	
