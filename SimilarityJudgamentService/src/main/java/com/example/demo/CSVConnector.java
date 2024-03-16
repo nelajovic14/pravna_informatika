@@ -33,11 +33,6 @@ public class CSVConnector implements Connector {
 
 				CaseDescription caseDescription = new CaseDescription();
 				
-				for(int i = 0; i < values.length; i++)
-				{
-					System.out.println(i + ": " + values[i]);
-				}
-				
 				caseDescription.setId(Integer.parseInt(values[0]));
 				caseDescription.setSud(values[1]);
 				caseDescription.setPoslovniBroj(values[2]);

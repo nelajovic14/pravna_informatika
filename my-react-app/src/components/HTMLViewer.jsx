@@ -16,10 +16,6 @@ function HTMLViewer() {
     setHtml(localStorage.getItem('html'))
   }
 
-  const handleHTML = async() =>{
-    await getHTMLById('3-2018')
-  }
-
   const handleClickOnCase = async (link) => {
     await getHTMLById(link.split('.')[0]);
   };
@@ -30,39 +26,44 @@ function HTMLViewer() {
   },[])
 
   const handleWindowLoad = (route) => {
-    const scrollTo =  route.split('#')[1];
-    if (scrollTo !== undefined) {
-      const myElement = document.getElementById(scrollTo);
-      if (myElement !== null) {
-        myElement.scrollIntoView();
-      } 
-    }
+    if(route.includes('#')){
+      const scrollTo =  route.split('#')[1];
+      if (scrollTo !== undefined) {
+        const myElement = document.getElementById(scrollTo);
+        if (myElement !== null) {
+          myElement.scrollIntoView();
+        } 
+      }
+  }
   };
     
   const handleClick = (event) => {
     event.preventDefault(); 
     
     const href = event.target.getAttribute('href');
-
-    document.getElementById('container3').innerHTML = htmlContent;
-    handleWindowLoad(href)
-
+    if(href!= null && href.includes('krivicni')){
+      document.getElementById('container3').innerHTML = htmlContent;
+      handleWindowLoad(href)
+    }
   };
 
   return (
-  <div class="mycontainer">
-    <div> 
-      AkomaNtoso Cases and Law :     
+  <div style={{ width: "100%", display: "flex", float:'left', justifyContent: "flex-start" }}>
+    <div style={{ width: "10%", background: "#f0f0f0", padding: "10px", borderRadius: "5px" ,border: "3px solid #ccc"}}>
+      <h2 style={{ margin: "0", fontSize: "18px" }}>AkomaNtoso Cases and Law : </h2>
+      <div style={{ marginTop: "10px" }}>
         {cases.map((link, index) => (
-        <div width="1000mpx">
-        <a key={index} href={`#${link}`} onClick={() => handleClickOnCase(link)}>
-          {link}
-        </a><br/>
-        </div>
+          <div key={index} style={{ marginLeft: "10px" }}>
+            <a key={index} href={`#${link}`} onClick={() => handleClickOnCase(link)}>
+              {link}
+            </a>
+          <br/>
+          </div>
         ))}
+      </div>
     </div>
-    <div onClick={handleClick}  id='container' />
-    <div   id='container3'/>
+    <div onClick={handleClick}  id='container' style={{ width: "45%", background: "#f0f0f0", padding: "55px", borderRadius: "5px" ,border: "3px solid #ccc" }}/>
+    <div   id='container3' style={{ width: "45%", background: "#f0f0f0", padding: "25px", borderRadius: "5px" ,border: "3px solid #ccc"}}/>
   </div>
   );
 }
