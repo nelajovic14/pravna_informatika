@@ -44,7 +44,7 @@ function CaseForm() {
       setSimilarCases(resp.data.data)
       document.getElementById('similarity').innerHTML = '<h3>Slične presude : </h3>';
       setLaw(resp.data.law)
-      document.getElementById('law').innerHTML = '<h3>Presuda po pravilima : </h3><div>' + law + '</div>';
+      document.getElementById('law').innerHTML = '<h3>Presuda po pravilima : </h3><div>' + resp.data.law + '</div>';
     }
   };
 
