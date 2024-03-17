@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function CaseForm() {
   const [similarCases,setSimilarCases] = useState([])
+  const [law,setLaw] = useState('')
+
   const [formData, setFormData] = useState({
     krivicnoDelo: '',
     vrstaRobe: '',
@@ -41,6 +43,8 @@ function CaseForm() {
       const resp = await getSimilarity(formData)
       setSimilarCases(resp.data.data)
       document.getElementById('similarity').innerHTML = '<h3>Slične presude : </h3>';
+      setLaw(resp.data.law)
+      document.getElementById('law').innerHTML = '<h3>Presuda po pravilima : </h3><div>' + law + '</div>';
     }
   };
 
@@ -278,6 +282,8 @@ function CaseForm() {
         ))}
       </ul>
     </div>
+
+    <div id='law'></div>
 
     </Container>
   );

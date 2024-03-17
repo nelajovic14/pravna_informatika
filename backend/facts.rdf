@@ -6,10 +6,10 @@
     <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01">
         <lc:defendant>John</lc:defendant>
         <lc:name>case 01</lc:name>
-        <lc:avoiding_customs_supervision>yes</lc:avoiding_customs_supervision>
-        <lc:has_weapon>no</lc:has_weapon>
-        <lc:use_force_or_threat>no</lc:use_force_or_threat>
-        <lc:forbbiden_goods>no</lc:forbbiden_goods>
-        <lc:sale_or_hidding_goods>no</lc:sale_or_hidding_goods>
+        <lc:avoiding_customs_supervision>True</lc:avoiding_customs_supervision>
+        <lc:has_weapon>False</lc:has_weapon>
+        <lc:use_force_or_threat>False</lc:use_force_or_threat>
+        <lc:forbbiden_goods>False</lc:forbbiden_goods>
+        <lc:sale_or_hidding_goods>True</lc:sale_or_hidding_goods>
     </lc:case>
 </rdf:RDF>
