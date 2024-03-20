@@ -48,7 +48,7 @@ function HTMLViewer() {
   };
 
   return (
-  <div style={{ width: "100%", display: "flex", float:'left', justifyContent: "flex-start" }}>
+  <div style={{ width: "100%", display: "flex", float:'left', justifyContent: "flex-start"}}>
     <div style={{ width: "10%", background: "#f0f0f0", padding: "10px", borderRadius: "5px" ,border: "3px solid #ccc"}}>
       <h2 style={{ margin: "0", fontSize: "18px" }}>AkomaNtoso Cases and Law : </h2>
       <div style={{ marginTop: "10px" }}>
@@ -62,8 +62,8 @@ function HTMLViewer() {
         ))}
       </div>
     </div>
-    <div onClick={handleClick}  id='container' style={{ width: "45%", background: "#f0f0f0", padding: "55px", borderRadius: "5px" ,border: "3px solid #ccc" }}/>
-    <div   id='container3' style={{ width: "45%", background: "#f0f0f0", padding: "25px", borderRadius: "5px" ,border: "3px solid #ccc"}}/>
+    <div class="scroll" onClick={handleClick}  id='container' style={{ width: "45%", background: "#f0f0f0", padding: "55px", borderRadius: "5px" ,border: "3px solid #ccc" , height:"700px"}} />
+    <div class="scroll"  id='container3' style={{ width: "45%", background: "#f0f0f0", padding: "25px", borderRadius: "5px" ,border: "3px solid #ccc", height:"700px"}}/>
   </div>
   );
 }
