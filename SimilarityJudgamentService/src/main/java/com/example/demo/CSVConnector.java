@@ -25,7 +25,7 @@ public class CSVConnector implements Connector {
 
 			String line = "";
 			while ((line = br.readLine()) != null) {
-				if (line.startsWith("#") || (line.length() == 0))
+				if (line.startsWith("#") || line.startsWith("id") || (line.length() == 0))
 					continue;
 				String[] values = line.split(";");
 

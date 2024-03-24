@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify,request 
-from services.case_service import request_for_case_similarity, create_new_akomaNtoso, create_new_html
-
+from services.case_service import request_for_case_similarity, create_new_akomaNtoso, create_new_html, create_pdf
+from services.dr_device_service import clean_and_start
 
 bp = Blueprint('case', __name__, url_prefix='/api/case')
 
@@ -38,12 +38,10 @@ def new_case() :
             'prenosOruzja' : prenosOruzja,
             'upotrebaSileIliPretnje' : upotrebaSileIliPretnje,
             'vrstaPresude' : vrstaPresude,
-            'primenjeniPropisi' : primenjeniPropisi
+            'primenjeniPropisi' : primenjeniPropisi.split(',')
         }
         
-        print(data)
-    
-        return jsonify({'data':request_for_case_similarity(data)}),200
+        return jsonify({'data':request_for_case_similarity(data), 'law': clean_and_start(True,naoruzan,upotrebaSileIliPretnje,ogranicenaIliZabranjenaRoba,preprodaja or prikrivanje)}),200
     
     return jsonify({'data':'error'}),500
 
@@ -98,6 +96,7 @@ def create_new_case():
     
         create_new_akomaNtoso(data)
         create_new_html(data)
+        create_pdf(data)
         return jsonify({'response' :'success'}),200
         
     return jsonify({'response' :'error'}),500

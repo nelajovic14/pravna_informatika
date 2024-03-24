@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import { getSimilarity, createNewCase } from '../services/newCaseService';
 import { TextField, Button, Container, Typography,CssBaseline,Zoom ,Avatar} from '@mui/material';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function CaseForm() {
+  const [similarCases,setSimilarCases] = useState([])
+  const [law,setLaw] = useState('')
+
   const [formData, setFormData] = useState({
     krivicnoDelo: '',
     vrstaRobe: '',
@@ -16,7 +21,7 @@ function CaseForm() {
     naoruzan: false,
     prenosOruzja: false,
     upotrebaSileIliPretnje: false,
-    vrstaPresude: '',
+    vrstaPresude: 'uslovna',
     primenjeniPropisi: '',
     sud: '',
     broj_presude: '',
@@ -34,21 +39,69 @@ function CaseForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const resp = await getSimilarity(formData)
-    console.log(resp)
+    if(validateSimilarCases(formData)){
+      const resp = await getSimilarity(formData)
+      setSimilarCases(resp.data.data)
+      document.getElementById('similarity').innerHTML = '<h3>Slične presude : </h3>';
+      setLaw(resp.data.law)
+      document.getElementById('law').innerHTML = '<h3>Presuda po pravilima : </h3><div>' + resp.data.law + '</div>';
+    }
   };
+
+  const validate = (formData) =>{
+    if(formData.vrstaRobe == '' || formData.kolicinaRobe == '' || formData.vrstaPresude == '' 
+    || formData.primenjeniPropisi == '' || formData.sud == '' || formData.broj_presude == '' || formData.optuzeni == '' ||
+      formData.sudija == '' || formData.datum == ''
+    )
+    {
+      console.log(formData)
+      showMessage("Sva polja osim opisa i texta su obavezna ")
+      return false;
+    }
+
+    return true;
+  }
+
+  const validateSimilarCases = () =>{
+    if(formData.vrstaRobe == ''){
+      showMessage("Vrsta robe je obavezno polje")
+      return false;
+    }
+    if(formData.kolicinaRobe == ''){
+      showMessage("Kolicina robe je obavezno polje")
+      return false;
+    }
+    return true;
+  }
 
   const handleNewCase = async (e) => {
     e.preventDefault();
-    const resp = await createNewCase(formData)
-    console.log(resp)
+    if(validate(formData)){
+      const resp = await createNewCase(formData)
+      if(resp.status == 200){
+        toast.success("Successfully added new case")
+      }
+    }
   };
 
+    const showMessage = (message) => {
+      toast.error(message, {
+        position: "top-right",
+        autoClose: 5000, 
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    };
+
   return (
-    <Container component="main" maxWidth="lg" style={{ background: '#FFFFFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+    <Container component="main" maxWidth="lg" style={{ background: '#FFFFFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
     <br/>
+    <ToastContainer />
     <Typography variant="h3" gutterBottom alignItems="center" justifyContent="center">
-        Podaci o novom slučaju : 
+      Podaci o novom slučaju : 
     </Typography>
     <br/>
     <form onSubmit={handleSubmit}>
@@ -104,7 +157,7 @@ function CaseForm() {
             Ogranicena ili zabranjena roba : &nbsp;
             <input
             type="checkbox"
-            name="ogranicenaIliZabranjanaRoba"
+            name="ogranicenaIliZabranjenaRoba"
             checked={formData.ogranicenaIliZabranjenaRoba}
             onChange={handleChange}
             />
@@ -170,6 +223,10 @@ function CaseForm() {
             />
         </label>
         <br/><br/>
+        <Button type="submit" variant="contained" color="primary" fullWidth>
+          Predlog slučajeva
+        </Button>
+        <br/><br/>
         <label>
             Vrsta presude : &nbsp;
             <select name="vrstaPresude" value={formData.vrstaPresude} onChange={handleChange}>
@@ -200,8 +257,34 @@ function CaseForm() {
             />
         </label>
         <br/><br/>
-      <button type="submit">Predlog slučajeva</button> &nbsp;&nbsp; <button type="button" onClick={handleNewCase}>Sačuvaj novi slučaj</button>
+        &nbsp;&nbsp; 
+        <Button type="submit" variant="contained" color="success" fullWidth onClick={handleNewCase}>Sačuvaj novi slučaj</Button>
+      <br/><br/>
     </form>
+   
+    <div id='similarity'></div>
+    <div >
+      <ul>
+        {similarCases.map((obj, index) => (
+          <li key={index}>
+            <strong>sud:</strong> {obj._case.description.sud}; <strong>poslovni broj:</strong> {obj._case.description.poslovniBroj}; 
+            <strong>sudija:</strong> {obj._case.description.sudija} ;<strong>tuzilac:</strong> {obj._case.description.tuzilac};
+            <strong>okrivljeni:</strong> {obj._case.description.okrivljeni}
+            <strong>krivicno delo:</strong> {obj._case.description.krivicnoDelo};<strong>vrsta robe:</strong> {obj._case.description.vrstaRobe};
+            <strong>kolicina robe:</strong> {obj._case.description.kolicinaRobe}; <strong>naoruzan:</strong> {obj._case.description.naoruzan};
+            <strong>ogranicena ili zabranjena roba:</strong> {obj._case.description.ogranicenaIliZabranjenaRoba}; <strong>opis:</strong> {obj._case.description.opis};
+            <strong>preprodja:</strong> {obj._case.description.preprodaja};<strong>prikrivanje:</strong> {obj._case.description.prikrivanje};
+            <strong>prenos oruzja:</strong> {obj._case.description.prenosOruzja};
+            <strong>rasturanje:</strong> {obj._case.description.rasturanje};<strong>upotreba sile ili pretnje:</strong> {obj._case.description.upotrebaSileIliPretnje};
+            <strong>zaobilazenje granicnog prelaza:</strong> {obj._case.description.zaobilazenjeGranicnogPrelaza}
+            <strong>primenjeni propisi:</strong> {obj._case.description.primenjeniPropisi}; --&gt;  {obj.eval};
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div id='law'></div>
+
     </Container>
   );
 }

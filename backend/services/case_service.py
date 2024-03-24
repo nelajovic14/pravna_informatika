@@ -1,7 +1,8 @@
 import requests
 import os 
 import xml.etree.ElementTree as ET
-
+import aspose.pdf as ap
+from services.dr_device_service import clean_and_start
 
 def request_for_case_similarity(data):
     url = 'http://localhost:8081/similar'
@@ -12,6 +13,27 @@ def request_for_case_similarity(data):
         return response.json()
     else:
         return None
+    
+def create_pdf(data):
+    text = data['sud'] + '''\n ''' + data['broj_presude'] + ''' \n''' + data['datum'] + '''\n''' + data['vrstaPresude'] + '''\n
+    ''' + data['sud'] + ''', sudija ''' + data['sudija'] + ''', optuzeni ''' + data['optuzeni'] + ''', postupak za krivnicno delo krijumčarenje , što je preneo 
+    ''' + data['kolicinaRobe'] + ''' kolicinu ''' + data['vrstaRobe'] + ''' uz seldeće faktore : 
+    zaobišao granični prelaz : ''' + str(data['zaobilazenjeGranicnogPrelaza']) + ''', prevezao ograničenu ili zabranjenu robu  : ''' + str(data['ogranicenaIliZabranjenaRoba']) + ''' 
+    , prikrivao robu : ''' + str(data['prikrivanje']) + ''', rasturao robu : ''' + str(data['rasturanje']) +''', preprodavao robu : ''' + str(data['preprodaja']) +'''
+    , bio naoruzan : ''' + str(data['naoruzan']) +''', preneo oruzje : ''' + str(data['prenosOruzja']) + ''',upotrebio silu ili pretnju ''' + str(data['upotrebaSileIliPretnje']) + '''
+    ''' + data['text'] + ''''''  + data['opis'] + ''' ''' + data["primenjeniPropisi"] + '''ZKP-a CG \nPresuda : ''' + clean_and_start(True,data['naoruzan'],data['upotrebaSileIliPretnje'],data['ogranicenaIliZabranjenaRoba'],data['preprodaja'] or data['prikrivanje'])
+    
+    document = ap.Document()
+
+    page = document.pages.add()
+
+    text_fragment = ap.text.TextFragment(text)
+
+    page.paragraphs.add(text_fragment)
+
+    path = os.getcwd() + '\\cases_pdf\\' + data['broj_presude'] + '.pdf'
+    document.save(path)
+
     
 def create_new_html(data):
     html_propisi = ''
@@ -26,7 +48,7 @@ def create_new_html(data):
                 ''' + propis + '''
             </a>'''
     
-    html_content = '''<?xml version="1.0" encoding="UTF-8"?>
+    html_content = '''
     <html>
     <style>
         h1,
@@ -49,11 +71,17 @@ def create_new_html(data):
         <h2>''' + data['sud'] + '''</h2>
         <h1>''' + data['broj_presude'] + '''</h1>
         <h3>''' + data['datum'] + '''</h3>
+        <h5>''' + data['vrstaPresude'] + '''</h5>
         <p>
-            ''' + data['text'] + ''' <br/> ''' + html_propisi + '''
-        
-        ZKP-a CG,
-        O S U DJ U J E<br/>
+            ''' + data['sud'] + ''', sudija ''' + data['sudija'] + ''', optuzeni ''' + data['optuzeni'] + ''', postupak za krivnicno delo <a href="/krivicni#art_265">krijumcarenje </a>, sto je preneo ''' + data['kolicinaRobe'] + ''' kolicinu ''' + data['vrstaRobe'] + ''' uz seldece faktore : 
+            
+            zaobisao granicni prelaz : ''' + str(data['zaobilazenjeGranicnogPrelaza']) + ''', prevezao ogranicenu ili zabranjenu robu  : ''' + str(data['ogranicenaIliZabranjenaRoba']) + ''' 
+            , prikrivao robu : ''' + str(data['prikrivanje']) + ''', rasturao robu : ''' + str(data['rasturanje']) +''' , preprodavao robu : ''' + str(data['preprodaja']) +'''
+            , bio naoruzan : ''' + str(data['naoruzan']) +''' , preneo oruzje : ''' + str(data['prenosOruzja']) + ''', upotrebio silu ili pretnju ''' + str(data['upotrebaSileIliPretnje']) + '''
+            ''' + data['text'] + ''''''  + data['opis'] + ''' <br/> ''' + html_propisi + '''
+        ZKP-a CG,<br/>
+        Presuda : <br/> ''' + + clean_and_start(True,data['naoruzan'],data['upotrebaSileIliPretnje'],data['ogranicenaIliZabranjenaRoba'],data['preprodaja'] or data['prikrivanje']) +'''
+        <br/>
          </p>
     </div>
     </html>'''
