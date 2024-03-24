@@ -25,11 +25,11 @@ def clean_and_start(avoiding_customs_supervision, has_weapon, use_force_or_threa
         <lc:forbbiden_goods>{forbidden_goods}</lc:forbbiden_goods>
         <lc:sale_or_hidding_goods>{sale_or_hidding_goods}</lc:sale_or_hidding_goods>
     </lc:case>
-</rdf:RDF>""".format(avoiding_customs_supervision=avoiding_customs_supervision,
-                     has_weapon=has_weapon,
-                     use_force_or_threat=use_force_or_threat,
-                     forbidden_goods=forbidden_goods,
-                     sale_or_hidding_goods=sale_or_hidding_goods)
+</rdf:RDF>""".format(avoiding_customs_supervision="yes" if avoiding_customs_supervision else "no",
+                     has_weapon="yes" if has_weapon else "no",
+                     use_force_or_threat="yes" if use_force_or_threat else "no",
+                     forbidden_goods="yes" if forbidden_goods else "no",
+                     sale_or_hidding_goods="yes" if sale_or_hidding_goods else "no")
     
     with open(facts_file_name, "w") as file:
         file.write(facts)
