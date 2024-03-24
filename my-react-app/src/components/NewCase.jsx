@@ -157,7 +157,7 @@ function CaseForm() {
             Ogranicena ili zabranjena roba : &nbsp;
             <input
             type="checkbox"
-            name="ogranicenaIliZabranjanaRoba"
+            name="ogranicenaIliZabranjenaRoba"
             checked={formData.ogranicenaIliZabranjenaRoba}
             onChange={handleChange}
             />
