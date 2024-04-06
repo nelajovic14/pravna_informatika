@@ -80,7 +80,7 @@ def create_new_html(data):
             , bio naoruzan : ''' + str(data['naoruzan']) +''' , preneo oruzje : ''' + str(data['prenosOruzja']) + ''', upotrebio silu ili pretnju ''' + str(data['upotrebaSileIliPretnje']) + '''
             ''' + data['text'] + ''''''  + data['opis'] + ''' <br/> ''' + html_propisi + '''
         ZKP-a CG,<br/>
-        Presuda : <br/> ''' + + clean_and_start(True,data['naoruzan'],data['upotrebaSileIliPretnje'],data['ogranicenaIliZabranjenaRoba'],data['preprodaja'] or data['prikrivanje']) +'''
+        Presuda : <br/> ''' + clean_and_start(True,data['naoruzan'],data['upotrebaSileIliPretnje'],data['ogranicenaIliZabranjenaRoba'],data['preprodaja'] or data['prikrivanje']) +'''
         <br/>
          </p>
     </div>
